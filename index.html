@@ -14,6 +14,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Lato&family=Tajawal:wght@400;500;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -329,8 +331,101 @@
         </div>
     </section>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <section id="testimonial">
+        <div class="container">
+            <h3>تعرف على خبراء سلسلة</h3>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="imgs/testimonial-1.png" alt="testimonial-1" class="img-fluid">
+                        <div class="info">
+                            <span class="name">أ. مصطفى حسن</span>
+                            <span class="job">Senior Front-end Developer</span>
+                            <p class="desc">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                                libero et velit
+                                interdum, ac aliquet odio
+                                mattis.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/testimonial-2.png" alt="testimonial-1" class="img-fluid">
+                        <div class="info">
+                            <span class="name">د.راما</span>
+                            <span class="job">Senior Front-end Developer</span>
+                            <p class="desc">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                                libero et velit
+                                interdum, ac aliquet odio
+                                mattis.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/testimonial-3.png" alt="testimonial-1" class="img-fluid">
+                        <div class="info">
+                            <span class="name">أ. يحيى</span>
+                            <span class="job">Senior Front-end Developer</span>
+                            <p class="desc">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                                libero et velit
+                                interdum, ac aliquet odio
+                                mattis.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/testimonial-1.png" alt="testimonial-1" class="img-fluid">
+                        <div class="info">
+                            <span class="name">أ مصطفى حسن</span>
+                            <span class="job">Senior Front-end Developer</span>
+                            <p class="desc">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                                libero et velit
+                                interdum, ac aliquet odio
+                                mattis.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="imgs/testimonial-1.png" alt="testimonial-1" class="img-fluid">
+                        <div class="info">
+                            <span class="name">أ مصطفى حسن</span>
+                            <span class="job">Senior Front-end Developer</span>
+                            <p class="desc">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
+                                libero et velit
+                                interdum, ac aliquet odio
+                                mattis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 32,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                280: {
+                    slidesPerView: 1
+                },
+                480: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 2
+                },
+                991: {
+                    slidesPerView: 3
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
