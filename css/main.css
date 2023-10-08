@@ -663,6 +663,7 @@ nav .nav-link {
 }
 
 /************************************ END carousel  ************************************/
+
 /************************************ START Other Testimonial  ************************************/
 #other-testimonial {
   background: #1B4071;
@@ -670,6 +671,228 @@ nav .nav-link {
 }
 
 /************************************ END Other Testimonial  ************************************/
+/************************************ START Last Blog ************************************/
+#last-blog {
+  padding: 128px 0;
+}
+
+#last-blog h3 {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
+#last-blog .last-blog-block h4 {
+  color: #000;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+#last-blog .last-blog-block p {
+  color: #000;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+#last-blog .last-blog-block div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+
+#last-blog input {
+  display: flex;
+  height: 54px;
+  padding: 12px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  border-radius: 5px;
+  border: 0.2px solid #333;
+  background: #FFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#last-blog .last-blog-block div button {
+  display: flex;
+  width: 179px;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  border-radius: 5px;
+  border: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#last-blog .top {
+  background: url(../imgs/blog-top-bg.png) no-repeat center center/cover;
+  width: 100%;
+  height: 222px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#last-blog .top div {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+#last-blog .top div button {
+  border-radius: 5px;
+  background: #FFF;
+  display: flex;
+  width: 117.968px;
+  height: 38.852px;
+  padding: 15px 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  color: var(--base, #1B4071);
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+  border: none;
+}
+
+#last-blog .bottom {
+  border-radius: 0px 0px 10px 10px;
+  background: var(--base, #1B4071);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+#last-blog .bottom h5 {
+  color: #FFF;
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 123%;
+}
+
+#last-blog .bottom p {
+  color: #FFF;
+  font-family: Cabin;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 157.4%;
+  margin-bottom: 0;
+}
+
+#last-blog .bottom a {
+  color: #FFF;
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+/************************************ END Last Blog  ************************************/
+
+/************************************ START FOOTER  ************************************/
+footer {
+  padding: 80px 0;
+  background: #1B4071;
+}
+
+footer .logo {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+footer .icon {
+  margin-left: 10px;
+}
+
+footer .media img {
+  margin-left: 20px;
+}
+
+footer h4 {
+  color: #FFF;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+footer p {
+  color: #E3E3E3;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #E3E3E3;
+  font-family: Tajawal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 10px;
+  display: block;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+footer .last-block a {
+  margin-bottom: 20px;
+}
+
+/************************************ END FOOTER  ************************************/
 
 @media (max-width: 991px) {
   nav .nav-item {
@@ -762,6 +985,22 @@ nav .nav-link {
 
   .slide .desc {
     font-size: 20px !important;
+  }
+
+  #last-blog .last-blog-block h4 {
+    font-size: 30px;
+  }
+
+  #last-blog .last-blog-block p {
+    font-size: 18px;
+  }
+
+  #last-blog .last-blog-block div input {
+    width: 100%;
+  }
+
+  #last-blog .last-blog-block div button {
+    width: 100%;
   }
 }
 
@@ -925,7 +1164,7 @@ nav .nav-link {
 }
 
 #testimonial .swiper-pagination-bullet-active {
-  background-color: #4070f4;
+  background-color: #4070f4 !important;
 }
 
 @media screen and (max-width: 768px) {
