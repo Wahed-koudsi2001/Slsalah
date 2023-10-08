@@ -12,6 +12,14 @@ ul {
   padding: 0;
 }
 
+.navbar-toggler {
+  background-color: #95d7f1;
+}
+
+.navbar-toggler:hover {
+  background-color: #95d7f1 !important;
+}
+
 #header .social-media {
   height: 40px;
   line-height: 40px;
@@ -94,6 +102,16 @@ nav .nav-link {
   font-size: 64px;
   font-style: normal;
   font-weight: 900;
+}
+
+@media (max-width: 991px) {
+  nav .nav-item {
+    margin-right: 0px;
+  }
+
+  .navbar-nav {
+    background-color: #95d7f1;
+  }
 }
 
 @media (max-width: 768px) {
