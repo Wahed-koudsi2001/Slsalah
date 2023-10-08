@@ -525,6 +525,77 @@ nav .nav-link {
 
 /************************************ END testimonial  ************************************/
 
+/************************************ START Planning  ************************************/
+#planning {
+  padding: 128px 0;
+  background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%);
+}
+
+#planning h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+#planning p {
+  color: #FFF;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+
+#planning button {
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #FFF;
+  color: var(--base, #1B4071);
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  border: none;
+}
+
+/************************************ END Planning  ************************************/
+
+/************************************ START carousel  ************************************/
+#carousel {
+  padding: 128px 0;
+}
+
+#carousel h3 {
+  color: #1B4071;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+/************************************ END carousel  ************************************/
+/************************************ START Other Testimonial  ************************************/
+#other-testimonial {
+  background: #1B4071;
+  padding: 128px 0;
+}
+
+/************************************ END Other Testimonial  ************************************/
+
 @media (max-width: 991px) {
   nav .nav-item {
     margin-right: 0px;
@@ -601,6 +672,18 @@ nav .nav-link {
   #articles .article-block {
     height: 315px;
   }
+
+  #testimonial h3 {
+    font-size: 34px;
+  }
+
+  #planning h3 {
+    font-size: 34px;
+  }
+
+  #planning p {
+    font-size: 28px;
+  }
 }
 
 /* ------------------------ swiper ------------------------ */
@@ -615,9 +698,143 @@ nav .nav-link {
   height: 100%;
   object-fit: cover;
 }
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction{
-  
+
+#testimonial .swiper-slide {
+  box-shadow: 3px 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  user-select: none;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  height: 8px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background: #fff !important;
+}
+
+/**************************** Other Testimonial  *****************************/
+#other-testimonial h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.testimonial {
+  position: relative;
+  width: 100%;
+  padding: 50px 0;
+  overflow: hidden;
+}
+
+.testimonial .image {
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.testimonial .slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.slide .desc {
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
+#other-testimonial .swiper-pagination-bullet {
+  background-color: #C6C5C5;
+  ;
+}
+
+.slide .quote-icon {
+  font-size: 30px;
+  color: #4070f4;
+}
+
+.slide .details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#other-testimonial .details .name {
+  color: #FFF;
+  text-align: center;
+  font-family: Cabin;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  margin-bottom: 4px;
+}
+
+.details .job {
+  color: #ACACAC;
+  text-align: right;
+  font-family: Cabin;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin-bottom: 28px;
+}
+
+/* swiper button css */
+.nav-btn {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#testimonial .swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
 }
