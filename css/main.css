@@ -396,3 +396,9 @@ nav .nav-link {
     height: 430px;
   }
 }
+
+@media (max-width: 575px) {
+  #articles .article-block {
+    height: 300px;
+  }
+}
