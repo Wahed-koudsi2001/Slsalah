@@ -1,3 +1,7 @@
+body {
+  direction: rtl;
+}
+
 a {
   text-decoration: none;
 }
@@ -293,7 +297,6 @@ nav .nav-link {
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
-
 }
 
 /************************************ END ARTICLEL  ************************************/
@@ -347,5 +350,9 @@ nav .nav-link {
 
   #video .video-container .left-bottom-layer {
     display: none;
+  }
+
+  #articles .article-block .content-layer {
+    padding: 0 0 40px 160px;
   }
 }
