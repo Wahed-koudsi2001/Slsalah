@@ -3,15 +3,35 @@ body {
   direction: rtl;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
   padding: 0;
 }
 
-.btn {
-  border-radius: 0;
-  background: linear-gradient(to right, #f17127 50%, #e68349 50%) no-repeat scroll right bottom / 210% 100% #e68349 !important;
-  transition: all 0.3s ease !important;
+#header .social-media {
+  height: 40px;
+  line-height: 40px;
+}
+
+#header .social-media-links img {
+  margin-right: 8px;
+}
+
+#header .social-media-icons img {
+  margin-right: 25px;
+}
+
+#header .social-media a {
+  color: #FFF;
+  font-family: Lato;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%;
 }
 
 .navbar {
@@ -61,6 +81,10 @@ nav .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#header nav ul li a:hover {
+  color: #347BD9;
 }
 
 #header h1 {
