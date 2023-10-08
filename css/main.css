@@ -684,6 +684,10 @@ nav .nav-link {
   #planning p {
     font-size: 28px;
   }
+
+  .slide .desc {
+    font-size: 20px !important;
+  }
 }
 
 /* ------------------------ swiper ------------------------ */
@@ -759,6 +763,7 @@ nav .nav-link {
   font-weight: 500;
   line-height: 150%;
   margin-bottom: 48px;
+  width: 90%;
 }
 
 #other-testimonial .swiper-pagination-bullet {
@@ -819,6 +824,25 @@ nav .nav-link {
 .nav-btn::before {
   font-size: 20px;
   color: #fff;
+}
+
+#other-testimonial .nav-btn {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: #F6F6F6;
+  transition: 0.2s;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#other-testimonial .nav-btn::after,
+#other-testimonial .nav-btn::before {
+  font-size: 20px;
+  color: #333;
 }
 
 .swiper-pagination-bullet {
