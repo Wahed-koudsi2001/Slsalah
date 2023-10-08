@@ -415,6 +415,53 @@ nav .nav-link {
 
 /************************************ END SERVICES  ************************************/
 
+/************************************ START statistics  ************************************/
+#statistics {
+  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%);
+  padding: 128px 0;
+}
+
+#statistics .statistics-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 64px 0px;
+  gap: 18px;
+}
+
+#statistics .statistics-block div {
+  display: flex;
+  padding: 10px 0px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+}
+
+#statistics .statistics-block h3 {
+  color: #FFF;
+  text-align: right;
+  font-family: Cabin;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  margin-bottom: 0;
+}
+
+#statistics .statistics-block h6 {
+  color: #C9C9C9;
+  text-align: right;
+  font-family: Cabin;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+}
+
+/************************************ END statistics  ************************************/
+
 @media (max-width: 991px) {
   nav .nav-item {
     margin-right: 0px;
@@ -480,6 +527,11 @@ nav .nav-link {
 
   #articles .article-block {
     height: 430px;
+  }
+
+  #statistics .statistics-block {
+    padding: 30px 0px;
+
   }
 }
 
