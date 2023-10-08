@@ -176,7 +176,7 @@ nav .nav-link {
 
 #video .video-container .right-top-video {
   position: absolute;
-  top: -40px;
+  top: -30px;
   right: 0
 }
 
@@ -184,7 +184,7 @@ nav .nav-link {
   width: 164px;
   height: 183px;
   position: absolute;
-  bottom: -40px;
+  bottom: -30px;
   left: 0px;
   background: #1B4071;
   border-radius: 10px;
@@ -204,10 +204,46 @@ nav .nav-link {
   .navbar-nav {
     background-color: #95d7f1;
   }
+
+  #video h3 {
+    font-size: 30px
+  }
+
+  #video p {
+    font-size: 20px;
+  }
+
+  #video .video-container .right-top-video {
+    top: -18px;
+    right: -18px;
+  }
+
+  #video .video-container .left-bottom-layer {
+    width: 150px;
+    height: 150px;
+    bottom: -18px;
+    left: -18px;
+  }
 }
 
 @media (max-width: 768px) {
   #header h1 {
     font-size: 40px;
+  }
+
+  #video h3 {
+    font-size: 24px
+  }
+
+  #video p {
+    font-size: 16px;
+  }
+
+  #video .video-container .right-top-video {
+    display: none;
+  }
+
+  #video .video-container .left-bottom-layer {
+    display: none;
   }
 }
