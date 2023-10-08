@@ -56,9 +56,10 @@ nav .nav-link {
   align-items: center;
   gap: 10px;
   border-radius: 5px;
+  border: none;
   background-image: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
   font-family: Tajawal;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 800;
   color: #E1E1E1;
