@@ -465,7 +465,6 @@ nav .nav-link {
 /************************************ START testimonial  ************************************/
 #testimonial {
   padding: 80px 0;
-  height: 100vh;
 }
 
 #testimonial h3 {
@@ -571,8 +570,84 @@ nav .nav-link {
 
 /************************************ END Planning  ************************************/
 
+/************************************ END portfolio  ************************************/
+#portfolio {
+  padding: 128px 0;
+}
+
+#portfolio h3 {
+  color: #1B4071;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+#portfolio figure {
+  position: relative;
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+#portfolio .content-layer {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  z-index: 999;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(27, 64, 113, 0.80);
+  opacity: 0;
+  transition: .2s linear;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+}
+
+#portfolio .content-layer:hover {
+  opacity: 1;
+}
+
+#portfolio .content-layer .title {
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+#portfolio .content-layer p {
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+/************************************ END portfolio  ************************************/
+
 /************************************ START carousel  ************************************/
 #carousel {
+  background: rgba(27, 64, 112, 0.05);
   padding: 128px 0;
 }
 
