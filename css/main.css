@@ -216,14 +216,13 @@ nav .nav-link {
 }
 
 #articles .article-block {
-  height: 300px;
+  height: 260px;
   position: relative;
   cursor: pointer;
 }
 
 #articles .one {
   background: url(../imgs/articles/1.png) center center/cover;
-
 }
 
 #articles .two {
@@ -238,10 +237,38 @@ nav .nav-link {
   background: url(../imgs/articles/4.png) center center/cover;
 }
 
+#articles .five {
+  background: url(../imgs/articles/5.png) center center/cover;
+}
+
+#articles .six {
+  background: url(../imgs/articles/6.png) center center/cover;
+}
+
+#articles .siven {
+  background: url(../imgs/articles/7.png) center center/cover;
+}
+
+#articles .eight {
+  background: url(../imgs/articles/8.png) center center/cover;
+}
+
+#articles .nine {
+  background: url(../imgs/articles/9.png) center center/cover;
+}
+
+#articles .ten {
+  background: url(../imgs/articles/10.png) center center/cover;
+}
+
+#articles .eleven {
+  background: url(../imgs/articles/11.png) center center/cover;
+}
+
 #articles .title {
   color: #333;
   font-family: Tajawal;
-  font-size: 38px;
+  font-size: 33px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -258,7 +285,8 @@ nav .nav-link {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  padding: 0 0 60px 60px;
+  padding: 0 0 60px 100px;
+  width: 100%;
 }
 
 #articles .article-block .content-layer {
@@ -275,7 +303,7 @@ nav .nav-link {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
-  padding: 0 0 50px 100px;
+  padding: 0 0 50px 120px;
 }
 
 #articles .article-block:hover .content-layer {
@@ -329,6 +357,10 @@ nav .nav-link {
     bottom: -18px;
     left: -18px;
   }
+
+  #articles .title {
+    padding: 0 0 60px 135px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -353,6 +385,14 @@ nav .nav-link {
   }
 
   #articles .article-block .content-layer {
-    padding: 0 0 40px 160px;
+    padding: 0 0 50px 130px;
+  }
+
+  #articles .title {
+    font-size: 32px;
+  }
+
+  #articles .article-block {
+    height: 430px;
   }
 }
