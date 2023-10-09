@@ -11,6 +11,10 @@ ul {
   padding: 0;
 }
 
+.main-color {
+  color: #1B4071;
+}
+
 .navbar-toggler {
   background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%);
 }
@@ -145,7 +149,7 @@ nav a.active {
 }
 
 #video h3 {
-  color: #1B4071;
+  color: #181818;
   font-family: Tajawal;
   font-size: 48px;
   font-style: normal;
@@ -286,7 +290,7 @@ nav a.active {
 #articles .title {
   color: #333;
   font-family: Tajawal;
-  font-size: 33px;
+  font-size: 31px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -502,6 +506,7 @@ nav a.active {
 }
 
 #testimonial .info {
+  height: 220px;
   padding: 24px 16px;
   display: flex;
   flex-direction: column;
@@ -586,6 +591,41 @@ nav a.active {
   border: none;
 }
 
+#planning figure {
+  position: relative;
+  height: 435px;
+}
+
+#planning figure img {
+  position: absolute;
+  top: 0;
+}
+
+#planning figure img.one {
+  right: 10px;
+  top: 10px;
+}
+
+#planning figure img.two {
+  right: 20px;
+  top: 20px;
+}
+
+#planning figure img.three {
+  right: 30px;
+  top: 30px;
+}
+
+#planning figure img.four {
+  right: 40px;
+  top: 40px;
+}
+
+#planning figure img.five {
+  right: 50px;
+  top: 50px;
+}
+
 /************************************ END Planning  ************************************/
 
 /************************************ END portfolio  ************************************/
@@ -594,7 +634,7 @@ nav a.active {
 }
 
 #portfolio h3 {
-  color: #1B4071;
+  color: #181818;
   font-family: Tajawal;
   font-size: 48px;
   font-style: normal;
@@ -661,6 +701,25 @@ nav a.active {
   line-height: 120%;
 }
 
+#portfolio button {
+  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
+  display: flex;
+  width: 179px;
+  padding: 12px 20px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  color: #FFF;
+  text-align: center;
+  font-family: Cabin;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  margin: 64px auto 0;
+}
+
 /************************************ END portfolio  ************************************/
 
 /************************************ START carousel  ************************************/
@@ -670,7 +729,7 @@ nav a.active {
 }
 
 #carousel h3 {
-  color: #1B4071;
+  color: #181818;
   font-family: Tajawal;
   font-size: 48px;
   font-style: normal;
@@ -1305,8 +1364,109 @@ footer .last-block a {
   margin: 0 auto;
 }
 
-
 /************************************ END Gallery  ************************************/
+
+/************************************ START Caontact US  ************************************/
+.caontact-us-bg {
+  background: url(../imgs/contact-us.webp) no-repeat top center/cover !important;
+  height: 660px !important;
+  position: relative;
+}
+
+.caontact-us-bg .headerContent {
+  height: calc(560px - 120px) !important;
+}
+
+.caontact-us-bg::before {
+  content: "";
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  position: absolute;
+  inset: 0;
+}
+
+#contact-us {
+  padding: 100px 0;
+}
+
+#contact-us .contact-us-block h3 {
+  color: var(--base, #1B4071);
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+#contact-us .contact-us-block p {
+  color: #333;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  margin-bottom: 40px;
+}
+
+#contact-us form {
+  margin-bottom: 48px;
+}
+
+#contact-us form input {
+  border: 1px solid #E0E0E0 !important;
+  height: 50px;
+  padding: 12px 20px;
+}
+
+#contact-us form input[type="submit"] {
+  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
+  color: #FFF;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  padding: 0;
+}
+
+#contact-us form input,
+#contact-us form textarea {
+  margin-bottom: 20px;
+}
+
+#contact-us a img {
+  margin-left: 15px;
+  width: 40px;
+  height: 28px;
+}
+
+#contact-us a .main-title {
+  color: #1B4071;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+#contact-us a .child-title {
+  color: #333;
+  font-family: Cabin;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.26px;
+}
+
+#contact-us iframe {
+  height: 700px;
+  width: 100%;
+}
+
+/************************************ END Caontact US  ************************************/
 
 @media (max-width: 991px) {
   nav .nav-item {
@@ -1378,6 +1538,10 @@ footer .last-block a {
     width: 100%;
     gap: 20px;
   }
+
+  #testimonial .info {
+    height: 330px
+  }
 }
 
 @media (max-width: 768px) {
@@ -1385,8 +1549,14 @@ footer .last-block a {
     font-size: 40px;
   }
 
-  #video h3 {
-    font-size: 24px
+  #video h3,
+  #carousel h3,
+  #portfolio h3 {
+    font-size: 38px
+  }
+
+  #other-testimonial h3 {
+    font-size: 40px;
   }
 
   #video p {
@@ -1415,6 +1585,35 @@ footer .last-block a {
 
   #statistics .statistics-block {
     padding: 30px 0px;
+  }
+
+  #planning figure img.one {
+    right: 0px;
+    top: 10px;
+  }
+
+  #planning figure img.two {
+    right: 0px;
+    top: 20px;
+  }
+
+  #planning figure img.three {
+    right: 0px;
+    top: 30px;
+  }
+
+  #planning figure img.four {
+    right: 0px;
+    top: 40px;
+  }
+
+  #planning figure img.five {
+    right: 0px;
+    top: 50px;
+  }
+
+  #testimonial .info {
+    height: 100%
   }
 }
 
@@ -1489,6 +1688,15 @@ footer .last-block a {
 
   #our-gallery .main-block-gallery .gallery-block p {
     font-size: 24px;
+  }
+
+  #planning figure {
+    position: relative;
+    height: 275px;
+  }
+
+  #testimonial .info {
+    height: 260px
   }
 }
 
