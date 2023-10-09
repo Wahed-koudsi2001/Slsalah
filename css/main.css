@@ -1514,6 +1514,17 @@ footer .last-block a {
   margin-bottom: 48px;
 }
 
+#our-services .our-services-p {
+  color: #333;
+  text-align: center;
+  font-family: Cabin;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
 #our-services .service-block {
   border-radius: 10px;
   background: #347BD9;
@@ -1730,6 +1741,88 @@ footer .last-block a {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
   position: absolute;
   inset: 0;
+}
+
+.technical-consulting-bg {
+  background: url(../imgs/service-4.webp) no-repeat top center/cover !important;
+  height: 660px !important;
+  position: relative;
+}
+
+.technical-consulting-bg .headerContent {
+  height: calc(560px - 120px) !important;
+}
+
+.technical-consulting-bg::before {
+  content: "";
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  position: absolute;
+  inset: 0;
+}
+
+.tech-bd-cta {
+  background: url(../imgs/cta-tech.jpeg) no-repeat center center/cover !important;
+  padding: 64px 10px;
+}
+
+.tech-bd-cta h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%;
+  position: relative;
+}
+
+#data-base {
+  padding: 128px 0;
+  background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%)
+}
+
+#data-base h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Cabin;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
+#data-base .data-base-main-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+#data-base .data-base-main-block .data-base-block {
+  display: flex;
+  width: 440px;
+  height: 320px;
+  padding: 24px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 10px;
+  background: linear-gradient(240deg, rgba(102, 142, 191, 0.05) -118.4%, #F4F5F8 -23.05%, #FFF 96.98%);
+  box-shadow: 10px 15px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+#data-base .data-base-main-block .data-base-block p {
+  color: #1B4071;
+  text-align: center;
+  font-family: Cabin;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+
 }
 
 /************************************ END Services  ************************************/
@@ -2005,6 +2098,18 @@ footer .last-block a {
 
   .our-service-title {
     font-size: 17px !important;
+  }
+
+  .tech-bd-cta h3 {
+    font-size: 44px;
+  }
+
+  #our-services h3 {
+    font-size: 36px;
+  }
+
+  #our-services .our-services-p {
+    font-size: 25px;
   }
 }
 
