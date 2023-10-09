@@ -69,6 +69,10 @@ nav .nav-link {
   line-height: 120%;
 }
 
+/* nav .nav-link::action{
+
+} */
+
 nav a.active {
   color: #FFF !important;
   font-family: Tajawal !important;
@@ -124,7 +128,7 @@ nav a.active {
 }
 
 #header nav ul li a:hover {
-  color: #347BD9;
+  color: #347BD9 !important;
 }
 
 #header h1 {
@@ -1468,6 +1472,268 @@ footer .last-block a {
 
 /************************************ END Caontact US  ************************************/
 
+/************************************ START Services  ************************************/
+.financial-consulting-bg {
+  background: url(../imgs/service-1.webp) no-repeat top center/cover !important;
+  height: 660px !important;
+  position: relative;
+}
+
+.financial-consulting-bg .headerContent {
+  height: calc(560px - 120px) !important;
+}
+
+.financial-consulting-bg::before {
+  content: "";
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  position: absolute;
+  inset: 0;
+}
+
+.service-img-1 {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#our-services {
+  background: rgba(27, 64, 113, 0.05);
+  padding: 128px 0;
+}
+
+#our-services h3 {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
+#our-services .service-block {
+  border-radius: 10px;
+  background: #347BD9;
+  display: flex;
+  height: 140px;
+  width: 560px;
+  padding: 10px 48px;
+  align-items: center;
+  gap: 16px;
+}
+
+#our-services .service-block img {
+  width: 32px;
+  height: 27.921px;
+
+}
+
+#our-services .service-block p {
+  color: #FFF;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  margin-bottom: 0;
+}
+
+#our-importent {
+  padding: 128px 0;
+}
+
+#our-importent h4 {
+  color: #333;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+
+}
+
+#our-importent p {
+  color: #333;
+  font-family: Tajawal;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+#cta {
+  background: url(../imgs/cta.jpeg) no-repeat center center/cover;
+  position: relative;
+}
+
+#cta::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%);
+}
+
+#cta .row {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  height: 477px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+#cta .row h3 {
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+#cta .row p {
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+#cta-2 {
+  padding: 128px 0;
+}
+
+#cta-2 p {
+  color: #333;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%;
+  margin-bottom: 48px;
+}
+
+#cta-2 button {
+  border-radius: 5px;
+  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
+  border: none;
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  padding: 12px 44px;
+  margin: auto;
+}
+
+.legal-advice-bg {
+  background: url(../imgs/service-2.webp) no-repeat top center/cover !important;
+  height: 660px !important;
+  position: relative;
+}
+
+.legal-advice-bg .headerContent {
+  height: calc(560px - 120px) !important;
+}
+
+.legal-advice-bg::before {
+  content: "";
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  position: absolute;
+  inset: 0;
+}
+
+#another-cta {
+  padding: 128px 0;
+}
+
+#another-cta .another-cta-text {
+  color: #333;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%;
+}
+
+#more-info {
+  padding: 128px 0;
+  background: rgba(27, 64, 113, 0.05);
+}
+
+#more-info .d-flex {
+  gap: 64px;
+}
+
+#more-info figure {
+  width: 513px;
+  height: 513px;
+}
+
+#more-info figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#more-info p {
+  width: 602px;
+  color: #333;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.more-info-2 {
+  background-color: #fff !important;
+}
+
+.more-info-3 {
+  background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%) !important;
+}
+
+.more-info-3 p {
+  color: #fff !important;
+}
+
+.human-consulting-bg {
+  background: url(../imgs/service-3.webp) no-repeat top center/cover !important;
+  height: 660px !important;
+  position: relative;
+}
+
+.human-consulting-bg .headerContent {
+  height: calc(560px - 120px) !important;
+}
+
+.human-consulting-bg::before {
+  content: "";
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  position: absolute;
+  inset: 0;
+}
+
+/************************************ END Services  ************************************/
+
 @media (max-width: 991px) {
   nav .nav-item {
     margin-right: 0px;
@@ -1542,6 +1808,11 @@ footer .last-block a {
   #testimonial .info {
     height: 330px
   }
+
+  #more-info p {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1614,6 +1885,10 @@ footer .last-block a {
 
   #testimonial .info {
     height: 100%
+  }
+
+  #our-services .service-block {
+    width: 100%;
   }
 }
 
@@ -1697,6 +1972,39 @@ footer .last-block a {
 
   #testimonial .info {
     height: 260px
+  }
+
+  #our-services .service-block p {
+    text-align: center;
+  }
+
+  #cta .row h3 {
+    font-size: 34px;
+  }
+
+  #cta .row p {
+    font-size: 24px;
+  }
+
+  #cta-2 p {
+    font-size: 24px;
+  }
+
+  #more-info figure {
+    width: 100%;
+    height: 300px;
+  }
+
+  #another-cta .another-cta-text {
+    font-size: 30px;
+  }
+
+  #more-info p {
+    font-size: 28px;
+  }
+
+  .our-service-title {
+    font-size: 17px !important;
   }
 }
 
