@@ -9,7 +9,6 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
         integrity="sha512-oAvZuuYVzkcTc2dH5z1ZJup5OmSQ000qlfRvuoTTiyTBjwX1faoyearj8KdMq0LgsBTHMrRuMek7s+CxF8yE+w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Lato&family=Tajawal:wght@400;500;700;800;900&display=swap"
@@ -62,13 +61,24 @@
                             <img src="./imgs/logo.png" alt="">
                         </a>
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">الصفحة الرئسية</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئسية</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">من نحن</a>
+                            <a class="nav-link" href="who-we-ara.html">من نحن</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">الخدمات</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                الخدمات
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">معرض الأعمال</a>
@@ -666,7 +676,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="">
+                                <a href="https://maps.app.goo.gl/c2okMmkgw1xdezZh7" target="_blank">
                                     <img src="imgs/icons/location.svg" alt="phone-icon" class="img-fluid icon">
                                     <span>الرياض - شارع الملك فهد 112</span>
                                 </a>
