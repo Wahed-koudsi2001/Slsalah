@@ -1825,6 +1825,284 @@ footer .last-block a {
 
 }
 
+.marketing-consulting-bg {
+  background: url(../imgs/service-5.webp) no-repeat top center/cover !important;
+  height: 660px !important;
+  position: relative;
+}
+
+.marketing-consulting-bg .headerContent {
+  height: calc(560px - 120px) !important;
+}
+
+.marketing-consulting-bg::before {
+  content: "";
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  position: absolute;
+  inset: 0;
+}
+
+.marketing-consulting {
+  background-color: #fff !important;
+}
+
+.marketing-consulting-2 {
+  background: rgba(27, 64, 113, 0.05) !important;
+}
+
+.marketing-consulting-2 p {
+  color: #333 !important;
+}
+
+.marketing-consulting-3 {
+  background: linear-gradient(87deg, #78A5DF -13.5%, #304259 93.99%) !important;
+}
+
+.marketing-consulting-3 p {
+  color: #fff !important;
+}
+
+.marketing-services-bg {
+  background: url(../imgs/service-6.webp) no-repeat top center/cover !important;
+  height: 660px !important;
+  position: relative;
+}
+
+.marketing-services-bg .headerContent {
+  height: calc(560px - 120px) !important;
+}
+
+.marketing-services-bg::before {
+  content: "";
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  position: absolute;
+  inset: 0;
+}
+
+.marketing-consulting h3 {
+  color: #1B4071;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
+.marketing-consulting-3 h3 {
+  color: #FFF;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
+.marketing-consulting-3 .marketing-consulting-3-block {
+  border-radius: 10px;
+  background: linear-gradient(240deg, rgba(102, 142, 191, 0.05) -118.4%, #F4F5F8 -23.05%, #FFF 96.98%);
+  box-shadow: 10px 15px 10px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  height: 400px;
+  padding: 24px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.marketing-consulting-3 .marketing-consulting-3-block img {
+  margin-bottom: 48px;
+}
+
+.marketing-consulting-3 .marketing-consulting-3-block h4 {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%;
+
+}
+
+.marketing-consulting-3 .marketing-consulting-3-block p {
+  color: #1B4071 !important;
+  font-family: Tajawal !important;
+  font-size: 24px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 200% !important;
+  text-align: center !important;
+}
+
+#marketing-content {
+  padding: 128px 0;
+  text-align: center;
+}
+
+#marketing-content h3 {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 64px;
+}
+
+#marketing-content button {
+  border-radius: 5px;
+  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  padding: 12px 44px;
+  border: no;
+}
+
+#marketing-content .marketing-content-main-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  margin-bottom: 64px;
+}
+
+#marketing-content .marketing-content-main-block .marketing-content-block {
+  border-radius: 10px;
+  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%);
+  box-shadow: 10px 15px 10px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  width: 520px;
+  height: 440px;
+  padding: 24px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+#marketing-content .marketing-content-main-block .marketing-content-block p {
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+.advertising-services-bg {
+  background: url(../imgs/service-7.webp) no-repeat top center/cover !important;
+  height: 660px !important;
+  position: relative;
+}
+
+.advertising-services-bg .headerContent {
+  height: calc(560px - 120px) !important;
+}
+
+.advertising-services-bg::before {
+  content: "";
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
+  position: absolute;
+  inset: 0;
+}
+
+.advertising-services-more-info {
+  padding: 48px 0 !important;
+}
+
+.advertising-services {
+  background-color: #fff !important;
+}
+
+.advertising-services h3 {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.advertising-services figure {
+  width: fit-content !important;
+}
+
+.advertising-services .service-block {
+  background: #304259 !important;
+  box-shadow: 6px 8px 10px 2px rgba(0, 0, 0, 0.10) !important;
+}
+
+.advertising-services button {
+  padding: 12px 44px;
+  border-radius: 5px;
+  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  margin-top: 48px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#our-design {
+  margin-top: 42px;
+}
+
+#our-design .our-design-block {
+  display: flex;
+  padding: 48px 24px;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#our-design .our-design-block img {
+  width: 128px;
+  height: 128px;
+}
+
+#our-design .our-design-block h3 {
+  color: #1B4071;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+#our-design .our-design-block p {
+  color: #333;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+}
+
 /************************************ END Services  ************************************/
 
 @media (max-width: 991px) {
@@ -2110,6 +2388,20 @@ footer .last-block a {
 
   #our-services .our-services-p {
     font-size: 25px;
+  }
+
+  .marketing-consulting-3 .marketing-consulting-3-block {
+    height: 100%;
+  }
+
+  .marketing-consulting-3 h3 {
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .marketing-consulting h3 {
+    text-align: center;
+    font-size: 42px;
   }
 }
 
