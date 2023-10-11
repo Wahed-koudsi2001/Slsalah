@@ -2833,8 +2833,8 @@ footer .last-block a {
   position: fixed;
   bottom: 25px;
   right: 30px;
-  height: 70px;
-  width: 70px;
+  height: 55px;
+  width: 55px;
   display: none;
   place-items: center;
   border-radius: 50%;
@@ -2844,12 +2844,12 @@ footer .last-block a {
 
 #progress-value {
   display: block;
-  height: calc(100% - 15px);
-  width: calc(100% - 15px);
+  height: calc(100% - 12px);
+  width: calc(100% - 12px);
   background-color: #ffffff;
   border-radius: 50%;
   display: grid;
   place-items: center;
-  font-size: 35px;
+  font-size: 30px;
   color: #001a2e;
 }
