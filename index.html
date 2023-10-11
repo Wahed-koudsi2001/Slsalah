@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سلسلة - الصحفة الرئيسية</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
         integrity="sha512-oAvZuuYVzkcTc2dH5z1ZJup5OmSQ000qlfRvuoTTiyTBjwX1faoyearj8KdMq0LgsBTHMrRuMek7s+CxF8yE+w=="
@@ -14,109 +13,350 @@
         href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Lato&family=Tajawal:wght@400;500;700;800;900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="shortcut icon" type="image/png" href="imgs/fivicon.png">
     <link rel="stylesheet" href="css/main.css">
+    <title>سلسلة - الصحفة الرئيسية</title>
 </head>
 
 <body>
-    <section id="header">
-        <div class="container">
-            <div class="social-media">
-                <div class="row justify-content-between">
-                    <div
-                        class="col-md-6 col-12 justify-content-md-start justify-content-center d-flex social-media-links">
-                        <div class="ms-4">
-                            <a href="mailto:info@gmail.com">
-                                <span>info@gmail.com</span>
-                                <img src="imgs/icons/mail.svg" alt="mail-icon" class="img-fluid">
-                            </a>
+
+    <div class="slider">
+        <div id="slider">
+            <div class="img-one main">
+                <div class="container">
+                    <div class="img-one-container">
+                        <div class="social-media">
+                            <div class="row justify-content-between">
+                                <div
+                                    class="col-md-6 col-12 justify-content-md-start justify-content-center d-flex social-media-links">
+                                    <div class="ms-4">
+                                        <a href="mailto:info@gmail.com">
+                                            <span>info@gmail.com</span>
+                                            <img src="imgs/icons/mail.svg" alt="mail-icon" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="tel:+966023114564">
+                                            <span>+966 023 11 4564</span>
+                                            <img src="imgs/icons/phone.svg" alt="phone-icon" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-start social-media-icons d-none d-md-block">
+                                    <img src="imgs/icons/Instagram.svg" alt="Instagram-icon" class="img-fluid">
+                                    <img src="imgs/icons/Facebook.svg" alt="Facebook-icon" class="img-fluid">
+                                    <img src="imgs/icons/icons8-twitterx 1.svg" alt="twitterx-icon" class="img-fluid">
+                                    <img src="imgs/icons/Linked-In.svg" alt="Linked-In-icon" class="img-fluid">
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <a href="tel:+966023114564">
-                                <span>+966 023 11 4564</span>
-                                <img src="imgs/icons/phone.svg" alt="phone-icon" class="img-fluid">
+                        <nav class="navbar navbar-expand-lg" id="headerBar">
+                            <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="nav-link d-none d-lg-block" href="#">
+                                <button class="ask-request">اطلب استشارة</button>
                             </a>
+                            <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav text-center py-4">
+                                    <a class="navbar-brand d-block d-lg-none" href="#">
+                                        <img src="./imgs/logo.png" alt="">
+                                    </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">الصفحة
+                                            الرئسية</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="who-we-ara.html">من نحن</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            الخدمات
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="financial consulting.html">الاستشارات
+                                                    والحلول
+                                                    الإدارية و المالية</a></li>
+                                            <li><a class="dropdown-item" href="legal advice.html">الاستشارات والحلول
+                                                    القانونية</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="human consulting.html">استشارات الموارد
+                                                    البشرية</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="technical consulting.html">الاستشارات
+                                                    والحلول
+                                                    التقنية</a></li>
+                                            <li><a class="dropdown-item" href="marketing consulting.html">الاستشارات
+                                                    والحلول
+                                                    التسويقية</a></li>
+                                            <li><a class="dropdown-item" href="marketing services.html">الخدمات
+                                                    التسويقية</a></li>
+                                            <li><a class="dropdown-item" href="advertising services.html">خدمات التصميم
+                                                    والحملات
+                                                    الإعلانية</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="gallery.html">معرض الأعمال</a>
+                                    </li>
+                                    <li class=" nav-item">
+                                        <a class="nav-link" href="#">المدونة</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact-us.html">اتصل بنا</a>
+                                    </li>
+                                    <a class="nav-link d-block d-lg-none" href="#">
+                                        <button class="ask-request">اطلب استشارة</button>
+                                    </a>
+                                    <div class="text-center social-media-icons d-block d-md-none">
+                                        <img src="imgs/icons/Instagram.svg" alt="Instagram-icon" class="img-fluid">
+                                        <img src="imgs/icons/Facebook.svg" alt="Facebook-icon" class="img-fluid">
+                                        <img src="imgs/icons/icons8-twitterx 1.svg" alt="twitterx-icon"
+                                            class="img-fluid">
+                                        <img src="imgs/icons/Linked-In.svg" alt="Linked-In-icon" class="img-fluid">
+                                    </div>
+                                </ul>
+                            </div>
+                            <a class="navbar-brand d-none d-lg-block" href="#">
+                                <img src="./imgs/logo.png" alt="">
+                            </a>
+                        </nav>
+                        <div class="headerContent">
+                            <h1>من المملكة موطن الريادة ورمز الطموح</h1>
                         </div>
                     </div>
-                    <div class="col-md-6 text-start social-media-icons d-none d-md-block">
-                        <img src="imgs/icons/Instagram.svg" alt="Instagram-icon" class="img-fluid">
-                        <img src="imgs/icons/Facebook.svg" alt="Facebook-icon" class="img-fluid">
-                        <img src="imgs/icons/icons8-twitterx 1.svg" alt="twitterx-icon" class="img-fluid">
-                        <img src="imgs/icons/Linked-In.svg" alt="Linked-In-icon" class="img-fluid">
-                    </div>
                 </div>
-            </div>
-            <nav class="navbar navbar-expand-lg" id="headerBar">
-                <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="nav-link d-none d-lg-block" href="#">
-                    <button class="ask-request">اطلب استشارة</button>
-                </a>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
-                    <ul class="navbar-nav text-center py-4">
-                        <a class="navbar-brand d-block d-lg-none" href="#">
-                            <img src="./imgs/logo.png" alt="">
-                        </a>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">الصفحة الرئسية</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="who-we-ara.html">من نحن</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                الخدمات
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="financial consulting.html">الاستشارات والحلول
-                                        الإدارية و المالية</a></li>
-                                <li><a class="dropdown-item" href="legal advice.html">الاستشارات والحلول القانونية</a>
-                                </li>
-                                <li><a class="dropdown-item" href="human consulting.html">استشارات الموارد البشرية</a>
-                                </li>
-                                <li><a class="dropdown-item" href="technical consulting.html">الاستشارات والحلول
-                                        التقنية</a></li>
-                                <li><a class="dropdown-item" href="marketing consulting.html">الاستشارات والحلول
-                                        التسويقية</a></li>
-                                <li><a class="dropdown-item" href="marketing services.html">الخدمات التسويقية</a></li>
-                                <li><a class="dropdown-item" href="advertising services.html">خدمات التصميم والحملات
-                                        الإعلانية</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">معرض الأعمال</a>
-                        </li>
-                        <li class=" nav-item">
-                            <a class="nav-link" href="#">المدونة</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact-us.html">اتصل بنا</a>
-                        </li>
-                        <a class="nav-link d-block d-lg-none" href="#">
-                            <button class="ask-request">اطلب استشارة</button>
-                        </a>
-                        <div class="text-center social-media-icons d-block d-md-none">
-                            <img src="imgs/icons/Instagram.svg" alt="Instagram-icon" class="img-fluid">
-                            <img src="imgs/icons/Facebook.svg" alt="Facebook-icon" class="img-fluid">
-                            <img src="imgs/icons/icons8-twitterx 1.svg" alt="twitterx-icon" class="img-fluid">
-                            <img src="imgs/icons/Linked-In.svg" alt="Linked-In-icon" class="img-fluid">
-                        </div>
-                    </ul>
-                </div>
-                <a class="navbar-brand d-none d-lg-block" href="#">
-                    <img src="./imgs/logo.png" alt="">
-                </a>
-            </nav>
-            <div class="headerContent">
-                <h1>من المملكة موطن الريادة ورمز الطموح</h1>
             </div>
         </div>
-    </section>
-
+        <div id="slider">
+            <div class="img-two main">
+                <div class="container">
+                    <div class="img-two-container">
+                        <div class="social-media">
+                            <div class="row justify-content-between">
+                                <div
+                                    class="col-md-6 col-12 justify-content-md-start justify-content-center d-flex social-media-links">
+                                    <div class="ms-4">
+                                        <a href="mailto:info@gmail.com">
+                                            <span>info@gmail.com</span>
+                                            <img src="imgs/icons/mail.svg" alt="mail-icon" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="tel:+966023114564">
+                                            <span>+966 023 11 4564</span>
+                                            <img src="imgs/icons/phone.svg" alt="phone-icon" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-start social-media-icons d-none d-md-block">
+                                    <img src="imgs/icons/Instagram.svg" alt="Instagram-icon" class="img-fluid">
+                                    <img src="imgs/icons/Facebook.svg" alt="Facebook-icon" class="img-fluid">
+                                    <img src="imgs/icons/icons8-twitterx 1.svg" alt="twitterx-icon" class="img-fluid">
+                                    <img src="imgs/icons/Linked-In.svg" alt="Linked-In-icon" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-expand-lg" id="headerBar">
+                            <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="nav-link d-none d-lg-block" href="#">
+                                <button class="ask-request">اطلب استشارة</button>
+                            </a>
+                            <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav text-center py-4">
+                                    <a class="navbar-brand d-block d-lg-none" href="#">
+                                        <img src="./imgs/logo.png" alt="">
+                                    </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">الصفحة
+                                            الرئسية</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="who-we-ara.html">من نحن</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            الخدمات
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="financial consulting.html">الاستشارات
+                                                    والحلول
+                                                    الإدارية و المالية</a></li>
+                                            <li><a class="dropdown-item" href="legal advice.html">الاستشارات والحلول
+                                                    القانونية</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="human consulting.html">استشارات الموارد
+                                                    البشرية</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="technical consulting.html">الاستشارات
+                                                    والحلول
+                                                    التقنية</a></li>
+                                            <li><a class="dropdown-item" href="marketing consulting.html">الاستشارات
+                                                    والحلول
+                                                    التسويقية</a></li>
+                                            <li><a class="dropdown-item" href="marketing services.html">الخدمات
+                                                    التسويقية</a></li>
+                                            <li><a class="dropdown-item" href="advertising services.html">خدمات التصميم
+                                                    والحملات
+                                                    الإعلانية</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="gallery.html">معرض الأعمال</a>
+                                    </li>
+                                    <li class=" nav-item">
+                                        <a class="nav-link" href="#">المدونة</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact-us.html">اتصل بنا</a>
+                                    </li>
+                                    <a class="nav-link d-block d-lg-none" href="#">
+                                        <button class="ask-request">اطلب استشارة</button>
+                                    </a>
+                                    <div class="text-center social-media-icons d-block d-md-none">
+                                        <img src="imgs/icons/Instagram.svg" alt="Instagram-icon" class="img-fluid">
+                                        <img src="imgs/icons/Facebook.svg" alt="Facebook-icon" class="img-fluid">
+                                        <img src="imgs/icons/icons8-twitterx 1.svg" alt="twitterx-icon"
+                                            class="img-fluid">
+                                        <img src="imgs/icons/Linked-In.svg" alt="Linked-In-icon" class="img-fluid">
+                                    </div>
+                                </ul>
+                            </div>
+                            <a class="navbar-brand d-none d-lg-block" href="#">
+                                <img src="./imgs/logo.png" alt="">
+                            </a>
+                        </nav>
+                        <div class="headerContent">
+                            <h1>إلى رائدي الأعمال <br class="d-none d-md-block"> أصحاب الرؤى وفكر التطوير</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="slider">
+            <div class="img-three main">
+                <div class="container">
+                    <div class="img-three-container">
+                        <div class="social-media">
+                            <div class="row justify-content-between">
+                                <div
+                                    class="col-md-6 col-12 justify-content-md-start justify-content-center d-flex social-media-links">
+                                    <div class="ms-4">
+                                        <a href="mailto:info@gmail.com">
+                                            <span>info@gmail.com</span>
+                                            <img src="imgs/icons/mail.svg" alt="mail-icon" class="img-fluid">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="tel:+966023114564">
+                                            <span>+966 023 11 4564</span>
+                                            <img src="imgs/icons/phone.svg" alt="phone-icon" class="img-fluid">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 text-start social-media-icons d-none d-md-block">
+                                    <img src="imgs/icons/Instagram.svg" alt="Instagram-icon" class="img-fluid">
+                                    <img src="imgs/icons/Facebook.svg" alt="Facebook-icon" class="img-fluid">
+                                    <img src="imgs/icons/icons8-twitterx 1.svg" alt="twitterx-icon" class="img-fluid">
+                                    <img src="imgs/icons/Linked-In.svg" alt="Linked-In-icon" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <nav class="navbar navbar-expand-lg" id="headerBar">
+                            <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <a class="nav-link d-none d-lg-block" href="#">
+                                <button class="ask-request">اطلب استشارة</button>
+                            </a>
+                            <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
+                                <ul class="navbar-nav text-center py-4">
+                                    <a class="navbar-brand d-block d-lg-none" href="#">
+                                        <img src="./imgs/logo.png" alt="">
+                                    </a>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="index.html">الصفحة
+                                            الرئسية</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="who-we-ara.html">من نحن</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            الخدمات
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="financial consulting.html">الاستشارات
+                                                    والحلول
+                                                    الإدارية و المالية</a></li>
+                                            <li><a class="dropdown-item" href="legal advice.html">الاستشارات والحلول
+                                                    القانونية</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="human consulting.html">استشارات الموارد
+                                                    البشرية</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="technical consulting.html">الاستشارات
+                                                    والحلول
+                                                    التقنية</a></li>
+                                            <li><a class="dropdown-item" href="marketing consulting.html">الاستشارات
+                                                    والحلول
+                                                    التسويقية</a></li>
+                                            <li><a class="dropdown-item" href="marketing services.html">الخدمات
+                                                    التسويقية</a></li>
+                                            <li><a class="dropdown-item" href="advertising services.html">خدمات التصميم
+                                                    والحملات
+                                                    الإعلانية</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="gallery.html">معرض الأعمال</a>
+                                    </li>
+                                    <li class=" nav-item">
+                                        <a class="nav-link" href="#">المدونة</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact-us.html">اتصل بنا</a>
+                                    </li>
+                                    <a class="nav-link d-block d-lg-none" href="#">
+                                        <button class="ask-request">اطلب استشارة</button>
+                                    </a>
+                                    <div class="text-center social-media-icons d-block d-md-none">
+                                        <img src="imgs/icons/Instagram.svg" alt="Instagram-icon" class="img-fluid">
+                                        <img src="imgs/icons/Facebook.svg" alt="Facebook-icon" class="img-fluid">
+                                        <img src="imgs/icons/icons8-twitterx 1.svg" alt="twitterx-icon"
+                                            class="img-fluid">
+                                        <img src="imgs/icons/Linked-In.svg" alt="Linked-In-icon" class="img-fluid">
+                                    </div>
+                                </ul>
+                            </div>
+                            <a class="navbar-brand d-none d-lg-block" href="#">
+                                <img src="./imgs/logo.png" alt="">
+                            </a>
+                        </nav>
+                        <div class="headerContent">
+                            <h1>سلسلة معكم لتحقيق الرؤية وتحويلها <br class="d-none d-md-block">
+                                إلى واقع</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="up">↑</span>
+        <span class="down">↓</span>
+    </div>
+    </div>
 
     <section id="video">
         <div class="container">
@@ -358,12 +598,16 @@
                         <img src="imgs/testimonial-2.png" alt="testimonial-1" class="img-fluid">
                         <div class="info">
                             <span class="name">أ. ليلى بنت معيض</span>
-                            <span class="job">● مستشارة اقتصادية ومطورة أعمال</span>
+                            <span class="job">مستشارة اقتصادية ومطورة أعمال</span>
                             <p class="desc">
                                 مؤسسة شركة خبراء سلسلة للاستشارات وحلول الأعمال و
                                 مؤسسة منصة سلسلة لتخطيط الأعمال
 
                             </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                اطلب استشارة
+                            </button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -374,6 +618,10 @@
                             <p class="desc">
                                 متخصص في دراسات الجدوى الاقتصادية
                             </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                اطلب استشارة
+                            </button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -386,6 +634,10 @@
                                 مساهمة في تأسيس نظام سلسلة لتخطيط الأعمال
 
                             </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                اطلب استشارة
+                            </button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -396,6 +648,10 @@
                             <p class="desc">
                                 خبير حوكمة وتأسيس شركات
                             </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                اطلب استشارة
+                            </button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -407,6 +663,10 @@
                             <p class="desc">
                                 باحثة في مجال الابتكار والريادة المجتمعية.
                             </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                اطلب استشارة
+                            </button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -419,6 +679,10 @@
                                 متخصص خدمات تخطيط القوى العاملة والاستقطاب والتوظيف
 
                             </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                اطلب استشارة
+                            </button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -430,6 +694,10 @@
                                 مستشار قانوني.
 
                             </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                اطلب استشارة
+                            </button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -440,6 +708,10 @@
                             <p class="desc">
                                 مستشار صياغة اللوائح والإجراءات والسياسات التنظيمية.
                             </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                اطلب استشارة
+                            </button>
                         </div>
                     </div>
                     <div class="swiper-slide">
@@ -450,6 +722,10 @@
                             <p class="desc">
                                 متخصص تقييم شركات و متخصص تحليل الأسواق المالية وصناديق الاستثمار ودراسة مخاطر السوق.
                             </p>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                اطلب استشارة
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -744,58 +1020,122 @@
         </div>
     </footer>
 
+    <div class="modal fade" id="exampleModal" style="background-color: #fff;" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">احجز استشارة</h1>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label for="full-name" class="w-100">
+                            الاسم كامل
+                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                <style>
+                                    svg {
+                                        fill: #d66666
+                                    }
+                                </style>
+                                <path
+                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                            </svg>
+                            <input type="text" id="full-name" class="form-control w-100" placeholder="الاسم">
+                        </label>
+                        <label for="city" class="w-100">
+                            العنوان
+                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                <style>
+                                    svg {
+                                        fill: #d66666
+                                    }
+                                </style>
+                                <path
+                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                            </svg>
+                            <input type="text" id="city" class="form-control w-100" placeholder="البلد, المدينة">
+                        </label>
+                        <label for="industry" class="w-100">
+                            مجال العمل
+                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                <style>
+                                    svg {
+                                        fill: #d66666
+                                    }
+                                </style>
+                                <path
+                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                            </svg>
+                            <input type="text" id="industry" class="form-control w-100"
+                                placeholder="مطاعم, بنوك, مقاهي,....">
+                        </label>
+                        <label for="number" class="w-100 input-group ">
+                            الجوال
+                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                <style>
+                                    svg {
+                                        fill: #d66666
+                                    }
+                                </style>
+                                <path
+                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                            </svg>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="12345678952" id="number">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <img src="imgs/icons/Saudi-Arabia-Flag.png" alt="">
+                                </span>
+                            </div>
+                        </label>
+                        <label for="message" class="w-100">
+                            موضوع الاستشارة
+                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                <style>
+                                    svg {
+                                        fill: #d66666
+                                    }
+                                </style>
+                                <path
+                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                            </svg>
+                            <input type="text" id="message" class="form-control w-100" placeholder="موضوع الاستشارة">
+                        </label>
+                        <label for="message" class="w-100">
+                            الشرح
+                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                <style>
+                                    svg {
+                                        fill: #d66666
+                                    }
+                                </style>
+                                <path
+                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                            </svg>
+                            <textarea placeholder="نبذة عن الاستشارة المطلوبة" id="message"
+                                class="form-control"></textarea>
+                        </label>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">احجز الآن</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+
     <div class="copyRight">
         <p>جميع الحقوق محفوظة لشركة سلسلة 2023</p>
     </div>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 32,
-            freeMode: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                280: {
-                    slidesPerView: 1
-                },
-                480: {
-                    slidesPerView: 2
-                },
-                768: {
-                    slidesPerView: 3
-                }
-            }
-        });
-
-
-        var swiper = new Swiper(".mySwiper2", {
-            watchSlidesProgress: true,
-            slidesPerView: 5,
-        });
-
-        var swiper = new Swiper(".mySwiper3", {
-            slidesPerView: 1,
-            grabCursor: true,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
