@@ -119,13 +119,50 @@
                         <h3>اتصل بنا</h3>
                         <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
                         </p>
-                        <form action="">
-                            <input type="text" class="form-control" placeholder="الاسم*">
-                            <input type="email" class="form-control" placeholder="البريد الالكتروني*">
-                            <input type="number" class="form-control" placeholder="رقم الجوال*">
-                            <textarea name="" id="" cols="30" rows="10" class="form-control"
-                                placeholder="الشرح*"></textarea>
-                            <input type="submit" value="ارسال" class="form-control">
+                        <form class="row needs-validation" novalidate>
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="validationCustom01" value=""
+                                    placeholder="الاسم*" required>
+                                <div class="valid-feedback mt-2 ">
+                                    ممتاز
+                                </div>
+                                <div class="invalid-feedback mt-2">
+                                    الرجاء إدخال أسم
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input type="email" class="form-control" id="validationCustom01" value=""
+                                    placeholder="البريد الالكتروني*" required>
+                                <div class="valid-feedback mt-2 ">
+                                    ممتاز
+                                </div>
+                                <div class="invalid-feedback mt-2">
+                                    الرجاء إدخال البريد الالكتروني
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input type="number" class="form-control" id="validationCustom01" value=""
+                                    placeholder="رقم الجوال*" required>
+                                <div class="valid-feedback mt-2 ">
+                                    ممتاز
+                                </div>
+                                <div class="invalid-feedback mt-2">
+                                    الرجاء إدخال رقم جوال صالح
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control" id="validationCustom01" value=""
+                                    placeholder="الشرح*" required>
+                                <div class="valid-feedback mt-2 ">
+                                    ممتاز
+                                </div>
+                                <div class="invalid-feedback mt-2">
+                                    الرجاء إدخال نبذة عن الاستشارة المطلوبة
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="submit w-100">احجز الآن</button>
+                            </div>
                         </form>
                         <div class="d-flex gap-5 flex-wrap">
                             <div>

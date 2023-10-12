@@ -83,8 +83,6 @@ downBtn.addEventListener('click', function () {
     if (devir % slideSayisi !== index) { sliderReset(); }
 });
 
-
-
 // Scroll To Top With progress
 let calcScrollValue = () => {
     let scrollProgress = document.querySelector("#progress");
@@ -108,3 +106,58 @@ scrollProgress.addEventListener("click", () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+const forms = document.querySelectorAll('.needs-validation')
+// Loop over them and prevent submission
+Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+        if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+        }
+        form.classList.add('was-validated')
+    }, false)
+})
+
+
+let counters = document.querySelectorAll(".counter");
+let statistics = document.getElementById("statistics");
+let activated = false;
+
+function startCounter() {
+    counters.forEach(counter => {
+        counter.innerHTML = 0;
+        let count = 0;
+        function updateCount() {
+            const target = parseInt(counter.dataset.count);
+            if (count < target) {
+                count++;
+                counter.innerHTML = count;
+                setTimeout(updateCount, 1);
+            } else {
+                counter.innerHTML = target;
+            }
+        }
+        updateCount();
+        activated = true;
+    });
+}
+
+function resetCounter() {
+    counters.forEach(counter => {
+        counter.innerHTML = 0;
+    });
+    activated = false;
+}
+
+window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+    const statisticsOffset = statistics.offsetTop;
+    const windowHeight = window.innerHeight;
+
+    if (scrollPosition > statisticsOffset - windowHeight && !activated) {
+        startCounter();
+    } else if (scrollPosition < statisticsOffset - windowHeight || scrollPosition === 0) {
+        resetCounter();
+    }
+});

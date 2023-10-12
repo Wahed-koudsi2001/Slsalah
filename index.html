@@ -548,12 +548,15 @@
 
     <section id="statistics">
         <div class="container">
-            <div class="row gy-4">
+            <div class="row gy-4 nums">
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="statistics-block">
                         <img src="imgs/icons/statistics-1.svg" alt="statistics-1">
-                        <div>
-                            <h3>746 +</h3>
+                        <div class="main-counter">
+                            <div class="d-flex align-items-center w-100 justify-content-around">
+                                <i class="fa fa-plus"></i>
+                                <h3 data-count="746" class="counter">0</h3>
+                            </div>
                             <h6>Descriptoin</h6>
                         </div>
                     </div>
@@ -561,8 +564,11 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="statistics-block">
                         <img src="imgs/icons/statistics-2.svg" alt="statistics-1">
-                        <div>
-                            <h3>98%</h3>
+                        <div class="main-counter">
+                            <div class="d-flex align-items-center w-100 justify-content-around">
+                                <i class="fa fa-percent"></i>
+                                <h3 data-count="98" class="counter">0%</h3>
+                            </div>
                             <h6>Descriptoin</h6>
                         </div>
                     </div>
@@ -570,8 +576,11 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="statistics-block">
                         <img src="imgs/icons/statistics-3.svg" alt="statistics-1">
-                        <div>
-                            <h3>181 +</h3>
+                        <div class="main-counter">
+                            <div class="d-flex align-items-center w-100 justify-content-around">
+                                <i class="fa fa-plus"></i>
+                                <h3 data-count="181" class="counter">0</h3>
+                            </div>
                             <h6>Descriptoin</h6>
                         </div>
                     </div>
@@ -579,8 +588,11 @@
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="statistics-block">
                         <img src="imgs/icons/statistics-4.svg" alt="statistics-1">
-                        <div>
-                            <h3>972 +</h3>
+                        <div class="main-counter">
+                            <div class="d-flex align-items-center w-100 justify-content-around">
+                                <i class="fa fa-plus"></i>
+                                <h3 data-count="972" class="counter">0</h3>
+                            </div>
                             <h6>Descriptoin</h6>
                         </div>
                     </div>
@@ -739,17 +751,15 @@
         <div class="container">
             <h3 class="mb-5">منصة سلسلة لتخطيط الأعمال</h3>
             <div class="row align-items-center gap-5">
-                <div class="col-lg-6 col-12 h-100">
-                    <figure class="mb-md-5 mb-lg-0">
-                        <img src="imgs/planning.png" class="img-fluid one" alt="planning">
-                        <img src="imgs/planning.png" class="img-fluid two" alt="planning">
-                        <img src="imgs/planning.png" class="img-fluid three" alt="planning">
-                        <img src="imgs/planning.png" class="img-fluid four" alt="planning">
-                        <img src="imgs/planning.png" class="img-fluid five" alt="planning">
-
-                    </figure>
+                <div class="col-md-6 col-12 h-100">
+                    <div class="container-layer">
+                        <img src="imgs/planning.png">
+                        <img src="imgs/planning.png">
+                        <img src="imgs/planning.png">
+                        <img src="imgs/planning.png">
+                    </div>
                 </div>
-                <div class="col-lg-5 col-12">
+                <div class="col-md-5 col-12">
                     <p>كل ما تحتاجه لإنجاز وتخطيط أعمالك في منصة واحدة فقط، سارع وسجل في المنصة الآن لتحصل على كافة
                         المميزات المتاحة داخل
                         المنصة</p>
@@ -1028,103 +1038,184 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">احجز استشارة</h1>
                 </div>
                 <div class="modal-body">
-                    <form>
-                        <label for="full-name" class="w-100">
-                            الاسم كامل
-                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
-                                <style>
-                                    svg {
-                                        fill: #d66666
-                                    }
-                                </style>
-                                <path
-                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
-                            </svg>
-                            <input type="text" id="full-name" class="form-control w-100" placeholder="الاسم">
-                        </label>
-                        <label for="city" class="w-100">
-                            العنوان
-                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
-                                <style>
-                                    svg {
-                                        fill: #d66666
-                                    }
-                                </style>
-                                <path
-                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
-                            </svg>
-                            <input type="text" id="city" class="form-control w-100" placeholder="البلد, المدينة">
-                        </label>
-                        <label for="industry" class="w-100">
-                            مجال العمل
-                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
-                                <style>
-                                    svg {
-                                        fill: #d66666
-                                    }
-                                </style>
-                                <path
-                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
-                            </svg>
-                            <input type="text" id="industry" class="form-control w-100"
-                                placeholder="مطاعم, بنوك, مقاهي,....">
-                        </label>
-                        <label for="number" class="w-100 input-group ">
-                            الجوال
-                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
-                                <style>
-                                    svg {
-                                        fill: #d66666
-                                    }
-                                </style>
-                                <path
-                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
-                            </svg>
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="12345678952" id="number">
-                                <span class="input-group-text" id="basic-addon1">
-                                    <img src="imgs/icons/Saudi-Arabia-Flag.png" alt="">
-                                </span>
+                    <form class="row needs-validation" novalidate>
+                        <div class="col-12">
+                            <label for="validationCustom01" class="form-label mb-0">
+                                الاسم كامل
+                                <svg xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                    <style>
+                                        svg {
+                                            fill: #da4949;
+                                            margin-bottom: 20px
+                                        }
+                                    </style>
+                                    <path
+                                        d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                </svg>
+                            </label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" placeholder="الاسم"
+                                required>
+                            <div class="valid-feedback mt-2 ">
+                                ممتاز
                             </div>
-                        </label>
-                        <label for="message" class="w-100">
-                            موضوع الاستشارة
-                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
-                                <style>
-                                    svg {
-                                        fill: #d66666
-                                    }
-                                </style>
-                                <path
-                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
-                            </svg>
-                            <input type="text" id="message" class="form-control w-100" placeholder="موضوع الاستشارة">
-                        </label>
-                        <label for="message" class="w-100">
-                            الشرح
-                            <svg class="mb-3" xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
-                                <style>
-                                    svg {
-                                        fill: #d66666
-                                    }
-                                </style>
-                                <path
-                                    d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
-                            </svg>
-                            <textarea placeholder="نبذة عن الاستشارة المطلوبة" id="message"
-                                class="form-control"></textarea>
-                        </label>
+                            <div class="invalid-feedback mt-2">
+                                الرجاء إدخال أسم
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="validationCustom01" class="form-label mb-0">
+                                العنوان
+                                <svg xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                    <style>
+                                        svg {
+                                            fill: #da4949;
+                                            margin-bottom: 20px
+                                        }
+                                    </style>
+                                    <path
+                                        d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                </svg>
+                            </label>
+                            <input type="text" class="form-control" id="validationCustom01" value=""
+                                placeholder="البلد, المدينة" required>
+                            <div class="valid-feedback mt-2 ">
+                                ممتاز
+                            </div>
+                            <div class="invalid-feedback mt-2">
+                                الرجاء إدخال العنوان
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="validationCustom01" class="form-label mb-0">
+                                مجال العمل
+                                <svg xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                    <style>
+                                        svg {
+                                            fill: #da4949;
+                                            margin-bottom: 20px
+                                        }
+                                    </style>
+                                    <path
+                                        d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                </svg>
+                            </label>
+                            <input type="text" class="form-control" id="validationCustom01" value=""
+                                placeholder="مطاعم, بنوك, مقاهي,...." required>
+                            <div class="valid-feedback mt-2 ">
+                                ممتاز
+                            </div>
+                            <div class="invalid-feedback mt-2">
+                                الرجاء إدخال مجال العمل
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="validationCustom01" class="form-label mb-0">
+                                الجوال
+                                <svg xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                    <style>
+                                        svg {
+                                            fill: #da4949;
+                                            margin-bottom: 20px
+                                        }
+                                    </style>
+                                    <path
+                                        d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                </svg>
+                            </label>
+                            <div class="flag-input">
+                                <input type="number" class="form-control" id="validationCustom01" value=""
+                                    placeholder="12345678952" required>
+                                <img src="imgs/icons/Saudi-Arabia-Flag.png" class="img-fluid" alt="flag">
+                            </div>
+                            <div class="valid-feedback mt-2 ">
+                                ممتاز
+                            </div>
+                            <div class="invalid-feedback mt-2">
+                                الرجاء إدخال رقم جوال صالح
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="validationCustom01" class="form-label mb-0">
+                                البريد الالكتروني
+                                <svg xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                    <style>
+                                        svg {
+                                            fill: #da4949;
+                                            margin-bottom: 20px
+                                        }
+                                    </style>
+                                    <path
+                                        d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                </svg>
+                            </label>
+                            <input type="email" class="form-control" id="validationCustom01" value=""
+                                placeholder="example@gmail.com" required>
+                            <div class="valid-feedback mt-2 ">
+                                ممتاز
+                            </div>
+                            <div class="invalid-feedback mt-2">
+                                الرجاء إدخال البريد الالكتروني
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="validationCustom01" class="form-label mb-0">
+                                موضوع الاستشارة
+                                <svg xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                    <style>
+                                        svg {
+                                            fill: #da4949;
+                                            margin-bottom: 20px
+                                        }
+                                    </style>
+                                    <path
+                                        d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                </svg>
+                            </label>
+                            <input type="text" class="form-control" id="validationCustom01" value=""
+                                placeholder="موضوع الاستشارة" required>
+                            <div class="valid-feedback mt-2 ">
+                                ممتاز
+                            </div>
+                            <div class="invalid-feedback mt-2">
+                                الرجاء إدخال موضوع الاستشارة
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="validationCustom01" class="form-label mb-0">
+                                الشرح
+                                <svg xmlns="http://www.w3.org/2000/svg" height=".4em" viewBox="0 0 512 512">
+                                    <style>
+                                        svg {
+                                            fill: #da4949;
+                                            margin-bottom: 20px
+                                        }
+                                    </style>
+                                    <path
+                                        d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
+                                </svg>
+                            </label>
+                            <input type="text" class="form-control" id="validationCustom01" value=""
+                                placeholder="نبذة عن الاستشارة المطلوبة" required>
+                            <div class="valid-feedback mt-2 ">
+                                ممتاز
+                            </div>
+                            <div class="invalid-feedback mt-2">
+                                الرجاء إدخال نبذة عن الاستشارة المطلوبة
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="submit">احجز الآن</button>
+                        </div>
                     </form>
-                </div>
-                <div class="modal-footer justify-content-start">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">احجز الآن</button>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="progress">
-        <span id="progress-value">&#x1F815;</span>
+        <span id="progress-value">
+            <i class="fa fa-arrow-up" style="color: #304259;"></i>
+        </span>
     </div>
 
     <div class="copyRight">
@@ -1136,6 +1227,7 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>
