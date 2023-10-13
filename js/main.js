@@ -21,9 +21,26 @@ var swiper = new Swiper(".mySwiper", {
 
 
 var swiper = new Swiper(".mySwiper2", {
-    watchSlidesProgress: true,
     slidesPerView: 5,
+    grabCursor: false,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        280: {
+            slidesPerView: 2
+        },
+        768: {
+            slidesPerView: 3
+        },
+        991: {
+            slidesPerView: 4
+        }
+    }
 });
+
 
 var swiper = new Swiper(".mySwiper3", {
     slidesPerView: 1,

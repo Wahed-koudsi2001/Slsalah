@@ -11,6 +11,30 @@ ul {
   padding: 0;
 }
 
+.call-us {
+  border-radius: 5px;
+  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
+  padding: 10px 40px;
+  color: #FFF;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+}
+
+.call-us:hover {
+  background: #fff;
+  color: #347BD9;
+  border: 1px solid #347BD9;
+}
+
 .main-color {
   color: #1B4071;
 }
@@ -63,26 +87,21 @@ nav ul li a:hover {
   gap: 10px;
   border-radius: 5px;
   border: none;
-  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
+  background: linear-gradient(to right, #304259 50%, #347BD9 50%) no-repeat scroll right bottom / 210% 100% #39b9c3 !important;
   font-family: Tajawal;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
   color: #E1E1E1;
-  transition: .5s linear;
-  -webkit-transition: .5s linear;
-  -moz-transition: .5s linear;
-  -ms-transition: .5s linear;
-  -o-transition: .5s linear;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
 }
 
 .ask-request:hover {
-  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%);
-}
-
-button:hover {
-  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%) !important;
-  border-color: #78A5DF;
+  background-position: left bottom !important;
 }
 
 .social-media {
@@ -174,11 +193,11 @@ nav a.active {
 }
 
 #video .video-container .video-photo {
-  border-radius: 28px;
-  -webkit-border-radius: 28px;
-  -moz-border-radius: 28px;
-  -ms-border-radius: 28px;
-  -o-border-radius: 28px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
   position: relative;
   z-index: 2;
 }
@@ -206,7 +225,7 @@ nav a.active {
   width: 164px;
   height: 183px;
   position: absolute;
-  bottom: -25px;
+  bottom: -30px;
   left: -20px;
   background: #1B4071;
   border-radius: 10px;
@@ -575,6 +594,16 @@ nav a.active {
   font-weight: 800;
   line-height: 150%;
   margin-top: 16px;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+}
+
+#testimonial .info button:hover {
+  background: linear-gradient(95deg, #347BD9 27.16%, #304259 370.44%);
+  ;
 }
 
 /************************************ END testimonial  ************************************/
@@ -612,8 +641,8 @@ nav a.active {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background: #FFF;
-  color: var(--base, #1B4071);
+  background: linear-gradient(to right, #192026 50%, #fff 50%) no-repeat scroll right bottom / 210% 100% #39b9c3 !important;
+  color: #1B4071;
   text-align: center;
   font-family: Tajawal;
   font-size: 24px;
@@ -621,10 +650,16 @@ nav a.active {
   font-weight: 800;
   line-height: 150%;
   border: none;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
 }
 
 #planning button:hover {
   color: #fff !important;
+  background-position: left bottom !important;
 }
 
 #planning figure {
@@ -738,7 +773,7 @@ nav a.active {
 }
 
 #portfolio button {
-  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
+  background: linear-gradient(to right, #347BD9 50%, #304259 50%) no-repeat scroll right bottom / 210% 100% #39b9c3 !important;
   display: flex;
   width: 179px;
   padding: 12px 20px;
@@ -754,6 +789,15 @@ nav a.active {
   font-weight: 600;
   line-height: 150%;
   margin: 64px auto 0;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+}
+
+#portfolio button:hover {
+  background-position: left bottom !important;
 }
 
 /************************************ END portfolio  ************************************/
@@ -762,6 +806,8 @@ nav a.active {
 #carousel {
   background: rgba(27, 64, 112, 0.05);
   padding: 128px 0;
+  user-select: none;
+  position: relative;
 }
 
 #carousel h3 {
@@ -773,6 +819,43 @@ nav a.active {
   line-height: 150%;
   text-align: center;
   margin-bottom: 48px;
+}
+
+#carousel .swiper-wrapper div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carousel .swiper-wrapper div img {
+  width: 170px;
+}
+
+#carousel .swiper-button-next {
+  left: 0px;
+  top: 39%;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  background-color: transparent;
+}
+
+#carousel .swiper-button-prev {
+  right: 20px;
+  top: 39%;
+  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  background-color: transparent;
+}
+
+#carousel .nav-btn::after,
+#carousel .nav-btn::before {
+  color: #000;
 }
 
 /************************************ END carousel  ************************************/
@@ -867,7 +950,7 @@ nav a.active {
 }
 
 #last-blog .top {
-  background: url(../imgs/blog-top-bg.png) no-repeat center center/cover;
+  background: url(../imgs/blog-top-bg.webp) no-repeat center center/cover;
   width: 100%;
   height: 222px;
   border-radius: 8px;
@@ -887,7 +970,7 @@ nav a.active {
 
 #last-blog .top div button {
   border-radius: 5px;
-  background: #FFF;
+  background: linear-gradient(to right, #39b9c3 50%, #fff 50%) no-repeat scroll right bottom / 210% 100% #39b9c3 !important;
   display: flex;
   width: 117.968px;
   height: 38.852px;
@@ -903,11 +986,17 @@ nav a.active {
   line-height: normal;
   text-transform: capitalize;
   border: none;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
 }
 
 
 #last-blog .top div button:hover {
   color: #fff !important;
+  background-position: left bottom !important;
 }
 
 #last-blog .bottom {
@@ -1403,7 +1492,15 @@ footer .last-block a {
   font-weight: 600;
   line-height: 150%;
   border: none;
-  /* margin: 0 auto; */
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+}
+
+#our-gallery .main-block-gallery button:hover {
+  background: linear-gradient(45deg, #78A5DF 11.59%, #1B4071 150%);
 }
 
 #our-gallery .search {
@@ -1456,7 +1553,7 @@ footer .last-block a {
 
 #our-gallery .main-block .block .top {
   height: 222px;
-  background: url(../imgs/blog-1.png) no-repeat top center/cover;
+  background: url(../imgs/blog-1.webp) no-repeat top center/cover;
   border-radius: 10px 10px 0px 0px;
   -webkit-border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
@@ -1478,7 +1575,7 @@ footer .last-block a {
 
 #our-gallery .main-block .block .top button {
   border-radius: 5px;
-  background: #FFF;
+  background: linear-gradient(to right, #39b9c3 50%, #fff 50%) no-repeat scroll right bottom / 210% 100% #39b9c3 !important;
   display: flex;
   width: 117.968px;
   height: 38.852px;
@@ -1495,10 +1592,16 @@ footer .last-block a {
   font-weight: 700;
   line-height: 100%;
   margin-left: 10px;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
 }
 
 #our-gallery .main-block .block .top button:hover {
   color: #fff !important;
+  background-position: left bottom !important;
 }
 
 #our-gallery .main-block .block .bottom {
@@ -1826,7 +1929,7 @@ footer .last-block a {
 }
 
 #cta {
-  background: url(../imgs/cta.jpeg) no-repeat center center/cover;
+  background: url(../imgs/cta.webp) no-repeat center center/cover;
   position: relative;
 }
 
@@ -2009,7 +2112,7 @@ footer .last-block a {
 }
 
 .tech-bd-cta {
-  background: url(../imgs/cta-tech.jpeg) no-repeat center center/cover !important;
+  background: url(../imgs/cta-tech.webp) no-repeat center center/cover !important;
   padding: 64px 10px;
 }
 
@@ -2217,7 +2320,7 @@ footer .last-block a {
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
   padding: 12px 44px;
-  border: no;
+  border: none;
 }
 
 #marketing-content .marketing-content-main-block {
@@ -2297,22 +2400,22 @@ footer .last-block a {
   box-shadow: 6px 8px 10px 2px rgba(0, 0, 0, 0.10) !important;
 }
 
-.advertising-services button {
-  padding: 12px 44px;
-  border-radius: 5px;
+.advertising-services .call-us {
+  margin: 48px auto 0;
+  display: block;
+  width: fit-content;
+  border: 1px solid #304259;
   background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
-  color: #FFF;
-  text-align: center;
-  font-family: Tajawal;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 150%;
-  margin-top: 48px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+}
+
+.advertising-services .call-us:hover {
+  background: #fff;
+  color: #304259;
 }
 
 #our-design {
@@ -2469,7 +2572,7 @@ footer .last-block a {
   }
 
   #video p {
-    font-size: 15px;
+    font-size: 18px;
   }
 
   #video .video-container .right-top-video {
@@ -2588,7 +2691,7 @@ footer .last-block a {
   }
 
   #vision {
-    padding: 50px 0;
+    padding: 60px 0;
   }
 
   .vision-desc {
@@ -2642,7 +2745,7 @@ footer .last-block a {
   }
 
   #more-info p {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .our-service-title {
@@ -2667,7 +2770,7 @@ footer .last-block a {
 
   .marketing-consulting-3 h3 {
     text-align: center;
-    font-size: 42px;
+    font-size: 38px;
   }
 
   .marketing-consulting h3 {
@@ -2698,6 +2801,49 @@ footer .last-block a {
   #our-gallery .search button {
     padding: 0 24px;
   }
+
+  #services p {
+    font-size: 22px;
+  }
+
+  #more-about-us .more-about-us-block .imgs {
+    height: 300px;
+  }
+
+  #our-goals h3,
+  #our-value h3 {
+    font-size: 70px;
+  }
+
+  #contact-us iframe {
+    margin-top: 20px;
+  }
+
+  #video,
+  #statistics,
+  #articles,
+  #services,
+  #testimonial,
+  #planning,
+  #portfolio,
+  #carousel,
+  #other-testimonial,
+  #last-blog,
+  #more-about-us,
+  #our-goals,
+  #our-value,
+  #our-gallery,
+  #contact-us,
+  #our-services,
+  #our-importent,
+  #cta-2,
+  #another-cta,
+  #more-info,
+  #data-base,
+  #marketing-content {
+    padding: 60px 0 !important;
+  }
+
 }
 
 /* ------------------------ swiper ------------------------ */
@@ -2706,7 +2852,7 @@ footer .last-block a {
   height: 100%;
 }
 
-.swiper-slide img {
+#testimonial .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -3069,11 +3215,11 @@ form .submit {
   height: 100%;
   width: 100%;
   position: relative;
-  transition: all .3s;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
+  transition: all .4s linear;
+  -webkit-transition: all .4s linear;
+  -moz-transition: all .4s linear;
+  -ms-transition: all .4s linear;
+  -o-transition: all .4s linear;
 }
 
 .img-one {
