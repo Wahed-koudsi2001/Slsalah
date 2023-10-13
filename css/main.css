@@ -421,6 +421,9 @@ nav a.active {
 
 #services .service-block img {
   margin-bottom: 12px;
+  width: 151px;
+  height: 150px;
+  object-fit: cover;
 }
 
 #services .service-block h4 {
@@ -1931,6 +1934,10 @@ footer .last-block a {
   line-height: 150%;
 }
 
+#our-importent figure {
+  text-align: center;
+}
+
 #cta {
   background: url(../imgs/cta.webp) no-repeat center center/cover;
   position: relative;
@@ -3355,6 +3362,10 @@ footer .last-block a {
 
   #info-gallery .second-row p {
     margin-bottom: 10px;
+  }
+
+  #testimonial-2 h2 {
+    font-size: 38px;
   }
 }
 
