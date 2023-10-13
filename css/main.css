@@ -2457,6 +2457,173 @@ footer .last-block a {
   line-height: 150%;
 }
 
+.info-gallery a {
+  color: #333;
+}
+
+.info-gallery a.active {
+  color: #000 !important;
+}
+
+#info-gallery {
+  padding: 128px 0;
+}
+
+#info-gallery h1 {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+#info-gallery .first-row {
+  padding: 48px 0;
+}
+
+#info-gallery .first-row .first-row-block {
+  text-align: center;
+}
+
+#info-gallery .first-row .first-row-block h4 {
+  color: #1B4071;
+  font-family: Tajawal;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+
+}
+
+#info-gallery .first-row .first-row-block span {
+  display: block;
+  color: #333;
+  font-family: Tajawal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+#info-gallery .second-row .info-gallery-img {
+  border-radius: 15px;
+  height: 639.632px;
+  margin-bottom: 128px;
+  object-fit: cover;
+}
+
+#info-gallery .second-row p {
+  color: #444;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 64px;
+}
+
+#info-gallery .row-three {
+  padding: 64px 0;
+}
+
+#info-gallery .row-three h2 {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
+#info-gallery .row-three .row-three-block {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+#info-gallery .row-three .row-three-block::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(357deg, #1B4071 18.26%, rgba(27, 64, 113, 0.10) 43.76%);
+}
+
+#info-gallery .row-three .row-three-block img {
+  height: 433px;
+  width: 100%;
+  position: relative;
+  object-fit: cover;
+}
+
+#info-gallery .row-three .row-three-block div {
+  z-index: 888;
+  position: absolute;
+  bottom: 40px;
+  right: 24px;
+  color: #fff;
+}
+
+#info-gallery .row-three .row-three-block div h5 {
+  color: #FFF;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%;
+}
+
+#info-gallery .row-three .row-three-block div p {
+  color: #FFF;
+  text-align: right;
+  font-family: Tajawal;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+#info-gallery .row-three .row-three-block a {
+  position: absolute;
+  bottom: 12px;
+  left: 24px;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  border-radius: 5px;
+  background: #FFF;
+  transition: .3s linear;
+  -webkit-transition: .3s linear;
+  -moz-transition: .3s linear;
+  -ms-transition: .3s linear;
+  -o-transition: .3s linear;
+  z-index: 3;
+}
+
+#info-gallery .row-three .row-three-block a:hover {
+  background-color: #347BD9;
+  color: #fff;
+}
+
 /************************************ END Services  ************************************/
 
 /************************************ START Blog  ************************************/
@@ -2559,6 +2726,10 @@ footer .last-block a {
   #more-info p {
     width: 100%;
     text-align: center;
+  }
+
+  #info-gallery .second-row .info-gallery-img {
+    margin-bottom: 60px;
   }
 }
 
@@ -2850,7 +3021,8 @@ footer .last-block a {
   #another-cta,
   #more-info,
   #data-base,
-  #marketing-content {
+  #marketing-content,
+  #info-gallery {
     padding: 60px 0 !important;
   }
 
@@ -2941,6 +3113,26 @@ footer .last-block a {
 
   #our-design .our-design-block {
     padding: 15px 0;
+  }
+
+  .info-gallery nav a {
+    color: #fff;
+  }
+
+  #info-gallery .second-row .info-gallery-img {
+    margin-bottom: 30px;
+  }
+
+  #info-gallery .second-row p {
+    font-size: 24px;
+  }
+
+  #info-gallery h1 {
+    font-size: 40px;
+  }
+
+  .info-gallery a.active {
+    color: #fff !important;
   }
 }
 
@@ -3654,4 +3846,12 @@ form .submit {
   .container-layer {
     height: 300px;
   }
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+  border: none;
 }
