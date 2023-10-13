@@ -2057,7 +2057,7 @@ footer .last-block a {
   object-fit: cover;
 }
 
-#more-info p {
+#more-info .p {
   width: 602px;
   color: #333;
   text-align: right;
@@ -2741,6 +2741,64 @@ footer .last-block a {
   text-decoration-line: underline;
 }
 
+.card-slider {
+  display: flex;
+  width: 547px;
+  height: 410px;
+  padding: 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  box-shadow: 10px 15px 10px 2px rgba(0, 0, 0, 0.25);
+  transition: .2s linear;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+}
+
+.card-slider i {
+  font-size: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1B4071;
+}
+
+.card-slider span {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%;
+}
+
+.card-slider p {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 200%;
+}
+
+.swiper-slide.active {
+  background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%);
+}
+
+.swiper-slide.active i,
+.swiper-slide.active span,
+.swiper-slide.active p {
+  color: #fff;
+}
+
+
 
 /************************************ END Services  ************************************/
 
@@ -2760,6 +2818,25 @@ footer .last-block a {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
   position: absolute;
   inset: 0;
+}
+
+#testimonial-2 h2 {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.manage-social-media {
+  background: rgba(27, 64, 113, 0.05);
+  padding: 128px 0;
+}
+
+.manage-social-media h2 {
+  margin-bottom: 48px;
 }
 
 /************************************ END Blog  ************************************/
@@ -2841,13 +2918,23 @@ footer .last-block a {
     height: 330px
   }
 
-  #more-info p {
+  #more-info .p {
     width: 100%;
     text-align: center;
   }
 
   #info-gallery .second-row .info-gallery-img {
     margin-bottom: 60px;
+  }
+
+  .swiper-slide.active {
+    background: #fff;
+  }
+
+  .swiper-slide.active i,
+  .swiper-slide.active span,
+  .swiper-slide.active p {
+    color: #1B4071;
   }
 }
 
@@ -3140,7 +3227,8 @@ footer .last-block a {
   #more-info,
   #data-base,
   #marketing-content,
-  #info-gallery {
+  #info-gallery,
+  .manage-social-media {
     padding: 60px 0 !important;
   }
 
@@ -3434,7 +3522,8 @@ footer .last-block a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#testimonial .swiper-pagination-bullet-active {
+#testimonial .swiper-pagination-bullet-active,
+#testimonial-2 .swiper-pagination-bullet-active {
   background: #1B4071 !important;
 }
 
