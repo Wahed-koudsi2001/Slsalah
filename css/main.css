@@ -6,6 +6,10 @@ a {
   text-decoration: none;
 }
 
+figure {
+  margin: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -87,7 +91,7 @@ nav ul li a:hover {
   gap: 10px;
   border-radius: 5px;
   border: none;
-  background: linear-gradient(to right, #304259 50%, #347BD9 50%) no-repeat scroll right bottom / 210% 100% #39b9c3 !important;
+  background: linear-gradient(to right, #304259 50%, #347BD9 50%) no-repeat scroll left bottom / 210% 100% #39b9c3 !important;
   font-family: Tajawal;
   font-size: 16px;
   font-style: normal;
@@ -101,7 +105,7 @@ nav ul li a:hover {
 }
 
 .ask-request:hover {
-  background-position: left bottom !important;
+  background-position: right bottom !important;
 }
 
 .social-media {
@@ -419,11 +423,24 @@ nav a.active {
   cursor: pointer;
 }
 
-#services .service-block img {
+#services .service-block .img {
   margin-bottom: 12px;
-  width: 151px;
+  width: 150px;
   height: 150px;
-  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%);
+  overflow: hidden;
+  padding: 20px;
+  border: 0px solid #fff;
+}
+
+#services .service-block .img svg path,
+#services .service-block .img svg polygon {
+  fill: #fff;
 }
 
 #services .service-block h4 {
@@ -445,6 +462,11 @@ nav a.active {
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
+}
+
+#services .service-block:hover .img {
+  border-width: 3px;
+  background-color: transparent;
 }
 
 
@@ -644,7 +666,7 @@ nav a.active {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background: linear-gradient(to right, #192026 50%, #fff 50%) no-repeat scroll right bottom / 210% 100% #39b9c3 !important;
+  background: linear-gradient(to right, #fff 50%, #192026 50%) no-repeat scroll left bottom / 210% 100% #39b9c3 !important;
   color: #1B4071;
   text-align: center;
   font-family: Tajawal;
@@ -662,7 +684,7 @@ nav a.active {
 
 #planning button:hover {
   color: #fff !important;
-  background-position: left bottom !important;
+  background-position: right bottom !important;
 }
 
 #planning figure {
@@ -720,6 +742,7 @@ nav a.active {
 
 #portfolio figure {
   position: relative;
+  margin-bottom: 20px;
 }
 
 #portfolio img {
@@ -776,7 +799,7 @@ nav a.active {
 }
 
 #portfolio button {
-  background: linear-gradient(to right, #347BD9 50%, #304259 50%) no-repeat scroll right bottom / 210% 100% #39b9c3 !important;
+  background: linear-gradient(to right, #347BD9 50%, #304259 50%) no-repeat scroll left bottom / 210% 100% #39b9c3 !important;
   display: flex;
   width: 179px;
   padding: 12px 20px;
@@ -800,7 +823,7 @@ nav a.active {
 }
 
 #portfolio button:hover {
-  background-position: left bottom !important;
+  background-position: right bottom !important;
 }
 
 /************************************ END portfolio  ************************************/
@@ -973,7 +996,7 @@ nav a.active {
 
 #last-blog .top div button {
   border-radius: 5px;
-  background: linear-gradient(to right, #39b9c3 50%, #fff 50%) no-repeat scroll right bottom / 210% 100% #39b9c3 !important;
+  background: linear-gradient(to right, #fff 50%, #39b9c3 50%) no-repeat scroll left bottom / 210% 100% #39b9c3 !important;
   display: flex;
   width: 117.968px;
   height: 38.852px;
@@ -999,7 +1022,7 @@ nav a.active {
 
 #last-blog .top div button:hover {
   color: #fff !important;
-  background-position: left bottom !important;
+  background-position: right bottom !important;
 }
 
 #last-blog .bottom {
@@ -1882,21 +1905,39 @@ footer .last-block a {
   margin-bottom: 48px;
 }
 
-#our-services .service-block {
-  border-radius: 10px;
-  background: #347BD9;
+#our-services .our-services-row {
   display: flex;
-  height: 140px;
-  width: 560px;
-  padding: 10px 48px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 34px;
+}
+
+#our-services .service-block {
+  background: linear-gradient(to right, #304259 50%, #347BD9 50%) no-repeat scroll left bottom / 210% 100% #39b9c3 !important;
+  display: flex;
   align-items: center;
-  gap: 16px;
+  flex-basis: calc((100% / 2) - 24px);
+  padding: 10px 8px 10px 48px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: .2s linear;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+}
+
+#our-services .service-block:hover {
+  background-position: right bottom !important;
 }
 
 #our-services .service-block img {
-  width: 32px;
-  height: 27.921px;
-
+  width: 80px;
+  height: 80px;
+  margin-left: 8px;
 }
 
 #our-services .service-block p {
@@ -1912,6 +1953,13 @@ footer .last-block a {
 
 #our-importent {
   padding: 128px 0;
+}
+
+.our-importent-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 64px;
 }
 
 #our-importent h4 {
@@ -2053,17 +2101,6 @@ footer .last-block a {
   gap: 64px;
 }
 
-#more-info figure {
-  width: 513px;
-  height: 513px;
-}
-
-#more-info figure img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 #more-info .p {
   width: 602px;
   color: #333;
@@ -2073,10 +2110,6 @@ footer .last-block a {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
-}
-
-.more-info-2 {
-  background-color: #fff !important;
 }
 
 .more-info-3 {
@@ -2165,7 +2198,7 @@ footer .last-block a {
   display: flex;
   width: 440px;
   height: 320px;
-  padding: 24px 16px;
+  padding: 24px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -2175,10 +2208,13 @@ footer .last-block a {
   box-shadow: 10px 15px 10px 2px rgba(0, 0, 0, 0.25);
 }
 
+#data-base .data-base-main-block .data-base-block img {
+  height: 100px;
+}
+
 #data-base .data-base-main-block .data-base-block p {
   color: #1B4071;
   text-align: center;
-  font-family: Cabin;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -2255,7 +2291,7 @@ footer .last-block a {
   color: #FFF;
   text-align: right;
   font-family: Tajawal;
-  font-size: 48px;
+  font-size: 44px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -2282,7 +2318,7 @@ footer .last-block a {
   color: #1B4071;
   text-align: center;
   font-family: Tajawal;
-  font-size: 24px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
   line-height: 200%;
@@ -2356,6 +2392,11 @@ footer .last-block a {
   gap: 48px;
 }
 
+#marketing-content .marketing-content-main-block .marketing-content-block img {
+  width: 100px;
+  height: 100px;
+}
+
 #marketing-content .marketing-content-main-block .marketing-content-block p {
   color: #FFF;
   text-align: center;
@@ -2401,10 +2442,6 @@ footer .last-block a {
   line-height: 150%;
 }
 
-.advertising-services figure {
-  width: fit-content !important;
-}
-
 .advertising-services .service-block {
   background: #304259 !important;
   box-shadow: 6px 8px 10px 2px rgba(0, 0, 0, 0.10) !important;
@@ -2430,6 +2467,7 @@ footer .last-block a {
 
 #our-design {
   margin-top: 42px;
+  padding-bottom: 48px;
 }
 
 #our-design .our-design-block {
@@ -2750,7 +2788,6 @@ footer .last-block a {
 
 .card-slider {
   display: flex;
-  width: 547px;
   height: 410px;
   padding: 16px;
   flex-direction: column;
@@ -2765,14 +2802,15 @@ footer .last-block a {
   -moz-transition: .2s linear;
   -ms-transition: .2s linear;
   -o-transition: .2s linear;
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
 }
 
-.card-slider i {
-  font-size: 64px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #1B4071;
+.card-slider svg.one .cls-2 {
+  fill: #fff;
 }
 
 .card-slider span {
@@ -2782,7 +2820,9 @@ footer .last-block a {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 200%;
+  line-height: 150%;
+  display: block;
+  margin-bottom: 15px;
 }
 
 .card-slider p {
@@ -2795,11 +2835,28 @@ footer .last-block a {
   line-height: 200%;
 }
 
-.swiper-slide.active {
-  background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%);
+.card-slider svg {
+  width: 80px;
+  height: 80px;
 }
 
-.swiper-slide.active i,
+.swiper-slide.active {
+  background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.swiper-slide.active svg,
+.swiper-slide.active path,
+.swiper-slide.active polygon,
+.swiper-slide.active rect {
+  fill: #fff;
+  stroke: #fff
+}
+
 .swiper-slide.active span,
 .swiper-slide.active p {
   color: #fff;
@@ -2825,6 +2882,10 @@ footer .last-block a {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%);
   position: absolute;
   inset: 0;
+}
+
+#testimonial-2 {
+  padding-top: 48px;
 }
 
 #testimonial-2 h2 {
@@ -2935,7 +2996,12 @@ footer .last-block a {
   }
 
   .swiper-slide.active {
+    transform: scale(1);
     background: #fff;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
   }
 
   .swiper-slide.active i,
@@ -3012,10 +3078,6 @@ footer .last-block a {
 
   #testimonial .info {
     height: 100%
-  }
-
-  #our-services .service-block {
-    width: 100%;
   }
 }
 
@@ -3120,11 +3182,6 @@ footer .last-block a {
 
   #cta-2 p {
     font-size: 24px;
-  }
-
-  #more-info figure {
-    width: 100%;
-    height: 300px;
   }
 
   #another-cta .another-cta-text {
@@ -3553,8 +3610,7 @@ footer .last-block a {
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
-  /* top: 0; */
-  bottom: -48px;
+  bottom: -64px;
 }
 
 #testimonial .swiper {

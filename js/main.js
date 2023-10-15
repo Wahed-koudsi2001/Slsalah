@@ -1,6 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 32,
+    spaceBetween: 48,
     freeMode: true,
     pagination: {
         el: ".swiper-pagination",
@@ -38,6 +38,50 @@ function setActiveClass(swiper) {
 
     // Add the active class to the middle slide
     var middleSlideIndex = Math.floor(slides.length / 3);
+    var activeSlideIndex = (activeIndex + middleSlideIndex) % slides.length;
+    slides[activeSlideIndex].classList.add('active');
+}
+
+var swiper = new Swiper(".mySwiper-7", {
+    slidesPerView: 3,
+    spaceBetween: 48,
+    freeMode: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        991: {
+            slidesPerView: 3
+        }
+    },
+    on: {
+        init: function () {
+            setActiveClass(this);
+        },
+        slideChange: function () {
+            setActiveClass(this);
+        }
+    }
+});
+
+function setActiveClass(swiper) {
+    var slides = swiper.slides;
+    var activeIndex = swiper.activeIndex;
+
+    // Remove the active class from all slides
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].classList.remove('active');
+    }
+
+    // Add the active class to the middle slide
+    var middleSlideIndex = Math.floor(slides.length / 4);
     var activeSlideIndex = (activeIndex + middleSlideIndex) % slides.length;
     slides[activeSlideIndex].classList.add('active');
 }
