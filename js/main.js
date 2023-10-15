@@ -27,6 +27,27 @@ var swiper = new Swiper(".mySwiper", {
     }
 });
 
+var swiper = new Swiper(".mySwiper-11", {
+    slidesPerView: 3,
+    spaceBetween: 48,
+    freeMode: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        300: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        991: {
+            slidesPerView: 3
+        }
+    }
+});
+
 function setActiveClass(swiper) {
     var slides = swiper.slides;
     var activeIndex = swiper.activeIndex;
@@ -68,6 +89,9 @@ var swiper = new Swiper(".mySwiper-7", {
         slideChange: function () {
             setActiveClass(this);
         }
+    }, autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     }
 });
 
@@ -245,3 +269,6 @@ window.addEventListener("scroll", () => {
         resetCounter();
     }
 });
+
+
+ScrollReveal().reveal('.headline');

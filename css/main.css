@@ -69,8 +69,19 @@ ul {
   color: #fff;
 }
 
-nav ul li a:hover {
+nav ul li a,
+nav ul li a svg path {
+  transition: .2s linear !important;
+  -webkit-transition: .2s linear !important;
+  -moz-transition: .2s linear !important;
+  -ms-transition: .2s linear !important;
+  -o-transition: .2s linear !important;
+}
+
+nav ul li a:hover,
+nav ul li a:hover svg path {
   color: #347BD9 !important;
+  fill: #347BD9 !important;
 }
 
 .headerContent h1 {
@@ -91,21 +102,26 @@ nav ul li a:hover {
   gap: 10px;
   border-radius: 5px;
   border: none;
-  background: linear-gradient(to right, #304259 50%, #347BD9 50%) no-repeat scroll left bottom / 210% 100% #39b9c3 !important;
+  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
   font-family: Tajawal;
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
   color: #E1E1E1;
-  transition: .3s linear;
-  -webkit-transition: .3s linear;
-  -moz-transition: .3s linear;
-  -ms-transition: .3s linear;
-  -o-transition: .3s linear;
+  transition: background 3s ease;
+  -webkit-transition: background 3s ease;
+  -moz-transition: background 3s ease;
+  -ms-transition: background 3s ease;
+  -o-transition: background 3s ease;
 }
 
 .ask-request:hover {
-  background-position: right bottom !important;
+  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #fff;
 }
 
 .social-media {
@@ -3735,6 +3751,10 @@ footer .last-block a {
   line-height: 150%;
 }
 
+.modal-body form label svg {
+  margin-bottom: 20px;
+}
+
 .modal-body form input {
   margin-top: 16px;
   border-radius: 5px;
@@ -3926,6 +3946,7 @@ form .submit {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  z-index: 999;
 }
 
 #progress-value {
