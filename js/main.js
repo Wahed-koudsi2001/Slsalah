@@ -9,6 +9,47 @@ var swiper = new Swiper(".mySwiper", {
         disableOnInteraction: false,
     },
 });
+var swiper = new Swiper(".mySwiper-2", {
+    slidesPerView: 5,
+    grabCursor: false,
+    loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        280: {
+            slidesPerView: 2
+        },
+        768: {
+            slidesPerView: 3
+        },
+        991: {
+            slidesPerView: 4
+        }
+    }, autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+});
+
+var swiper = new Swiper(".mySwiper-3", {
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    }, autoplay: {
+        delay: 15000,
+        disableOnInteraction: false,
+    },
+});
+
 // var swiper = new Swiper(".mySwiper", {
 //     slidesPerView: 3,
 //     spaceBetween: 48,
@@ -120,45 +161,6 @@ function setActiveClass(swiper) {
     var activeSlideIndex = (activeIndex + middleSlideIndex) % slides.length;
     slides[activeSlideIndex].classList.add('active');
 }
-
-
-var swiper = new Swiper(".mySwiper2", {
-    slidesPerView: 5,
-    grabCursor: false,
-    loop: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        280: {
-            slidesPerView: 2
-        },
-        768: {
-            slidesPerView: 3
-        },
-        991: {
-            slidesPerView: 4
-        }
-    }
-});
-
-
-var swiper = new Swiper(".mySwiper3", {
-    slidesPerView: 1,
-    grabCursor: true,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-});
-
-
 
 const forms = document.querySelectorAll('.needs-validation')
 // Loop over them and prevent submission

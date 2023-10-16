@@ -749,7 +749,7 @@ nav a.active {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  background: linear-gradient(to right, #fff 50%, #192026 50%) no-repeat scroll left bottom / 210% 100% #39b9c3 !important;
+  background: #fff;
   color: #1B4071;
   text-align: center;
   font-family: Tajawal;
@@ -758,16 +758,6 @@ nav a.active {
   font-weight: 800;
   line-height: 150%;
   border: none;
-  transition: .3s linear;
-  -webkit-transition: .3s linear;
-  -moz-transition: .3s linear;
-  -ms-transition: .3s linear;
-  -o-transition: .3s linear;
-}
-
-#planning button:hover {
-  color: #fff !important;
-  background-position: right bottom !important;
 }
 
 #planning figure {
@@ -882,7 +872,7 @@ nav a.active {
 }
 
 #portfolio button {
-  background: linear-gradient(to right, #347BD9 50%, #304259 50%) no-repeat scroll left bottom / 210% 100% #39b9c3 !important;
+  background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
   display: flex;
   width: 179px;
   padding: 12px 20px;
@@ -906,7 +896,7 @@ nav a.active {
 }
 
 #portfolio button:hover {
-  background-position: right bottom !important;
+  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%)
 }
 
 /************************************ END portfolio  ************************************/
@@ -960,11 +950,6 @@ nav a.active {
   -ms-transform: translateY(50%);
   -o-transform: translateY(50%);
   background-color: transparent;
-}
-
-#carousel .nav-btn::after,
-#carousel .nav-btn::before {
-  color: #000;
 }
 
 /************************************ END carousel  ************************************/
@@ -1058,6 +1043,10 @@ nav a.active {
   -o-border-radius: 5px;
 }
 
+#last-blog .last-blog-block div button:hover {
+  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%)
+}
+
 #last-blog .top {
   background: url(../imgs/blog-top-bg.webp) no-repeat center center/cover;
   width: 100%;
@@ -1079,7 +1068,7 @@ nav a.active {
 
 #last-blog .top div button {
   border-radius: 5px;
-  background: linear-gradient(to right, #fff 50%, #39b9c3 50%) no-repeat scroll left bottom / 210% 100% #39b9c3 !important;
+  background: #fff;
   display: flex;
   width: 117.968px;
   height: 38.852px;
@@ -1100,12 +1089,6 @@ nav a.active {
   -moz-transition: .3s linear;
   -ms-transition: .3s linear;
   -o-transition: .3s linear;
-}
-
-
-#last-blog .top div button:hover {
-  color: #fff !important;
-  background-position: right bottom !important;
 }
 
 #last-blog .bottom {
@@ -2991,6 +2974,10 @@ footer .last-block a {
     left: 50%;
   }
 
+  #other-testimonial .desc {
+    width: 550px !important;
+  }
+
   .navbar-expand-lg .navbar-nav .dropdown-menu.show li {
     gap: 8px 0;
   }
@@ -3141,6 +3128,10 @@ footer .last-block a {
 }
 
 @media (max-width: 768px) {
+  #other-testimonial .desc {
+    width: 350px !important;
+  }
+
   .header .swiper-pagination {
     padding-left: 40px !important;
   }
@@ -3532,13 +3523,6 @@ footer .last-block a {
     font-size: 40px;
   }
 
-  .swiper-horizontal>.swiper-pagination-bullets,
-  .swiper-pagination-bullets.swiper-pagination-horizontal,
-  .swiper-pagination-custom,
-  .swiper-pagination-fraction {
-    bottom: -44px !important;
-  }
-
   #our-design .our-design-block {
     gap: 20px;
   }
@@ -3642,6 +3626,10 @@ footer .last-block a {
   line-height: 150%;
 }
 
+#other-testimonial .desc {
+  width: 810px;
+}
+
 .testimonial {
   position: relative;
   width: 100%;
@@ -3679,8 +3667,7 @@ footer .last-block a {
 }
 
 #other-testimonial .swiper-pagination-bullet {
-  background-color: #C6C5C5;
-  ;
+  background-color: #fff;
 }
 
 .slide .quote-icon {
@@ -3720,41 +3707,12 @@ footer .last-block a {
 
 /* swiper button css */
 .nav-btn {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  transform: translateY(30px);
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: 0.2s;
+  font-size: 0;
 }
 
-.nav-btn:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.nav-btn::after,
-.nav-btn::before {
-  font-size: 20px;
-  color: #fff;
-}
-
-#other-testimonial .nav-btn {
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
-  transform: translateY(30px);
-  background-color: #F6F6F6;
-  transition: 0.2s;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-#other-testimonial .nav-btn::after,
-#other-testimonial .nav-btn::before {
-  font-size: 20px;
-  color: #333;
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  display: none;
 }
 
 .swiper-pagination-bullet {
@@ -3766,22 +3724,27 @@ footer .last-block a {
   background: #1B4071 !important;
 }
 
+#other-testimonial .swiper-pagination-bullet-active {
+  width: 40px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
 @media screen and (max-width: 768px) {
   .slide p {
     padding: 0 20px;
   }
-
-  .nav-btn {
-    display: none;
-  }
 }
 
 
-.swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-  bottom: -64px;
+#testimonial .swiper-horizontal>.swiper-pagination-bullets,
+#testimonial .swiper-pagination-bullets.swiper-pagination-horizontal,
+#testimonial .swiper-pagination-custom,
+#testimonial .swiper-pagination-fraction {
+  bottom: -1px;
 }
 
 #testimonial .swiper {
