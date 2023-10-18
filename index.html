@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-
     <link rel="shortcut icon" type="image/png" href="imgs/fivicon.png">
     <link rel="stylesheet" href="css/main.css">
     <title>سلسلة - الصحفة الرئيسية</title>
@@ -1951,7 +1950,10 @@
                 <div class="modal-header justify-content-center">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">احجز استشارّة</h1>
                 </div>
-                <div class="modal-body" style="width: 837px;">
+                <div class="modal-body" style="width: 837px; @media (max-width: 991px) { 
+                    .modal-body{
+                        width: 100vw !important
+                    }}">
                     <form class="row needs-validation" novalidate style="width: 100%; margin: auto;">
                         <div class="col-12">
                             <label for="validationCustom01" class="form-label mb-0">
@@ -2036,7 +2038,7 @@
                                 </svg>
                             </label>
                             <div class="flag-input">
-                                <input style="text-align: left; padding-left: 60px;" type="number" class="form-control"
+                                <input style="text-align: left; padding-left: 70px;" type="number" class="form-control"
                                     id="validationCustom01" value="" placeholder="12345678952" required>
                                 <img src="imgs/icons/Saudi-Arabia-Flag.png" class="img-fluid" alt="flag">
                             </div>
@@ -2061,7 +2063,7 @@
                                         d="M208 32c0-17.7 14.3-32 32-32h32c17.7 0 32 14.3 32 32V172.9l122-70.4c15.3-8.8 34.9-3.6 43.7 11.7l16 27.7c8.8 15.3 3.6 34.9-11.7 43.7L352 256l122 70.4c15.3 8.8 20.5 28.4 11.7 43.7l-16 27.7c-8.8 15.3-28.4 20.6-43.7 11.7L304 339.1V480c0 17.7-14.3 32-32 32H240c-17.7 0-32-14.3-32-32V339.1L86 409.6c-15.3 8.8-34.9 3.6-43.7-11.7l-16-27.7c-8.8-15.3-3.6-34.9 11.7-43.7L160 256 38 185.6c-15.3-8.8-20.5-28.4-11.7-43.7l16-27.7C51.1 98.8 70.7 93.6 86 102.4l122 70.4V32z" />
                                 </svg>
                             </label>
-                            <input style="text-align: left; padding-left: 20px;" type="email" class="form-control"
+                            <input style="text-align: left; padding-left: 24px;" type="email" class="form-control"
                                 id="validationCustom01" value="" placeholder="example@gmail.com" required>
                             <div class="valid-feedback mt-2 ">
                                 ممتاز

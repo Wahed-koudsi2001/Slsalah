@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Lato&family=Tajawal:wght@400;500;700;800;900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/jpg" href="imgs/fivicon.png">
@@ -15,6 +12,7 @@
 </head>
 
 <body>
+
     <section id="header" class="caontact-us-bg">
         <div class="container position-absolute top-0 z-index-999 fixed-navbar">
             <div class="img-one-container">
@@ -62,8 +60,8 @@
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="nav-link d-none d-lg-block" href="#testimonial">
-                        <button class="ask-request">اطلب استشارة</button>
+                    <a class="nav-link d-none d-lg-block" href="index.html#testimonial">
+                        <button class="ask-request">اطلب استشارّة</button>
                     </a>
                     <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
                         <ul class="navbar-nav text-center py-4">
@@ -152,8 +150,8 @@
                             <li class="nav-item">
                                 <a class="nav-link active" href="contact-us.html">اتصل بنا</a>
                             </li>
-                            <a class="nav-link d-block d-lg-none" href="#testimonial">
-                                <button class="ask-request">اطلب استشارة</button>
+                            <a class="nav-link d-block d-lg-none" href="index.html#testimonial">
+                                <button class="ask-request">اطلب استشارّة</button>
                             </a>
                             <div
                                 class="col-md-6 text-start social-media-icons d-flex d-md-none justify-content-center align-items-center">
@@ -186,7 +184,6 @@
             <h1>اتصل بنا</h1>
         </div>
     </section>
-
     <section id="contact-us">
         <div class="container">
             <div class="row align-items-center g-0 g-md-5">
@@ -196,19 +193,19 @@
                         <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى
                         </p>
                         <form class="row needs-validation" novalidate>
-                            <div class="col-12">
+                            <div class="col-12 position-relative">
                                 <input type="text" class="form-control" id="validationCustom01" value=""
-                                    placeholder="الاسم*" required>
+                                    placeholder="الاسم" required>
+                                <span class="red-star-1">*</span>
                                 <div class="valid-feedback mt-2 ">
                                     ممتاز
                                 </div>
-                                <div class="invalid-feedback mt-2">
-                                    الرجاء إدخال أسم
-                                </div>
+                                <div class="invalid-feedback mt-2">الرجاء إدخال أسم</div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 position-relative">
                                 <input type="email" class="form-control" id="validationCustom01" value=""
-                                    placeholder="البريد الالكتروني*" required>
+                                    placeholder="البريد الالكتروني" required>
+                                <span class="red-star-2">*</span>
                                 <div class="valid-feedback mt-2 ">
                                     ممتاز
                                 </div>
@@ -216,9 +213,10 @@
                                     الرجاء إدخال البريد الالكتروني
                                 </div>
                             </div>
-                            <div class="col-12">
+                            <div class="col-12 position-relative">
                                 <input type="number" class="form-control" id="validationCustom01" value=""
-                                    placeholder="رقم الجوال*" required>
+                                    placeholder="رقم الجوال" required>
+                                <span class="red-star-3">*</span>
                                 <div class="valid-feedback mt-2 ">
                                     ممتاز
                                 </div>
@@ -226,9 +224,10 @@
                                     الرجاء إدخال رقم جوال صالح
                                 </div>
                             </div>
-                            <div class="col-12">
-                                <input type="text" class="form-control" id="validationCustom01" value=""
-                                    placeholder="الشرح*" required>
+                            <div class="col-12 position-relative">
+                                <textarea type="text" class="form-control" id="validationCustom01" value=""
+                                    placeholder="الشرح" required></textarea>
+                                <span class="red-star-4">*</span>
                                 <div class="valid-feedback mt-2 ">
                                     ممتاز
                                 </div>
@@ -237,25 +236,25 @@
                                 </div>
                             </div>
                             <div class="col-12">
-                                <button type="submit" class="submit w-100">احجز الآن</button>
+                                <input value="ارسال" type="submit" class="form-control">
                             </div>
                         </form>
                         <div class="d-flex gap-5 flex-wrap">
                             <div>
-                                <a href="mailto:info@gmail.com" class="d-flex align-items-center">
+                                <a href="mailto:contact@slsalah.com" class="d-flex align-items-center">
                                     <img src="imgs/icons/mail-dark.svg" alt="mail-icon" class="img-fluid">
                                     <div class="d-flex flex-column">
                                         <span class="main-title">البريد الالكتروني</span>
-                                        <span class="child-title">info@gmail.com</span>
+                                        <span class="child-title">contact@slsalah.com</span>
                                     </div>
                                 </a>
                             </div>
                             <div>
-                                <a href="tel:+966023114564" class="d-flex align-items-center">
+                                <a href="tel:+966555881764" class="d-flex align-items-center">
                                     <img src="imgs/icons/phone-dark.svg" alt="phone-icon" class="img-fluid">
                                     <div class="d-flex flex-column">
                                         <span class="main-title">الجوال</span>
-                                        <span class="child-title">0966 4564 641 22</span>
+                                        <span class="child-title" dir="ltr">+966 555 88 1764</span>
                                     </div>
                                 </a>
                             </div>
@@ -285,16 +284,16 @@
                                 <i class="fa fa-whatsapp"></i>
                             </a>
                             <a href="https://www.linkedin.com/company/slsalah-sa/" target="_blank">
-                                <i class="fa fa-linkedin-square"></i>
+                                <img src="imgs/icons/Linked-In.svg" alt="">
                             </a>
                             <a href="https://twitter.com/slsalah_sa" target="_blank">
-                                <i class="fa fa-twitter"></i>
+                                <img src="imgs/icons/icons8-twitterx 1.svg" alt="">
                             </a>
                             <a href="https://www.facebook.com/Slsalah.sa" target="_blank">
-                                <i class="fa fa-facebook"></i>
+                                <img src="imgs/icons/Facebook.svg" alt="">
                             </a>
                             <a href="https://www.instagram.com/slsalah_sa" target="_blank">
-                                <i class="fa fa-instagram"></i>
+                                <img src="imgs/icons/Instagram.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -333,12 +332,6 @@
                         <h4>تواصل معنا</h4>
                         <ul class="d-flex flex-column gy-5">
                             <li>
-                                <a href="mailto:contact@slsalah.com">
-                                    <img src="imgs/icons/mail.svg" alt="mail-icon" class="img-fluid icon">
-                                    <span>contact@slsalah.com</span>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="tel:+966555881764">
                                     <img src="imgs/icons/phone.svg" alt="phone-icon" class="img-fluid icon">
                                     <span dir="ltr">+966 555 88 1764</span>
@@ -348,6 +341,12 @@
                                 <a href="tel:+966112074129">
                                     <img src="imgs/icons/phone.svg" alt="phone-icon" class="img-fluid icon">
                                     <span dir="ltr">+966 112 07 4129</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:contact@slsalah.com">
+                                    <img src="imgs/icons/mail.svg" alt="mail-icon" class="img-fluid icon">
+                                    <span>contact@slsalah.com</span>
                                 </a>
                             </li>
                             <li>
