@@ -4,20 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Lato&family=Tajawal:wght@400;500;700;800;900&display=swap"
-        rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/jpg" href="imgs/fivicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/jpg" href="imgs/fivicon.png">
     <title>سلسلة - من نحن</title>
 </head>
 
 <body>
     <section id="header" class="who-we-are-bg">
-        <div class="container position-absolute top-0 z-index-999 fixed-navbar">
-            <div class="img-one-container">
+        <div class="position-absolute top-0 z-index-999 fixed-navbar fixedNavbar">
+            <div class="container img-one-container">
                 <div class="social-media mt-2">
                     <div class="row justify-content-between">
                         <div
@@ -60,10 +57,10 @@
                     <button class="navbar-toggler btn" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="fa fa-bars"></span>
                     </button>
-                    <a class="nav-link d-none d-lg-block" href="#testimonial">
-                        <button class="ask-request">اطلب استشارة</button>
+                    <a class="nav-link d-none d-lg-block" href="index.html#testimonial">
+                        <button class="ask-request">اطلب استشارّة</button>
                     </a>
                     <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
                         <ul class="navbar-nav text-center py-4">
@@ -152,8 +149,8 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="contact-us.html">اتصل بنا</a>
                             </li>
-                            <a class="nav-link d-block d-lg-none" href="#testimonial">
-                                <button class="ask-request">اطلب استشارة</button>
+                            <a class="nav-link d-block d-lg-none" href="index.html#testimonial">
+                                <button class="ask-request">اطلب استشارّة</button>
                             </a>
                             <div
                                 class="col-md-6 text-start social-media-icons d-flex d-md-none justify-content-center align-items-center">
@@ -401,16 +398,16 @@
                                 <i class="fa fa-whatsapp"></i>
                             </a>
                             <a href="https://www.linkedin.com/company/slsalah-sa/" target="_blank">
-                                <i class="fa fa-linkedin-square"></i>
+                                <img src="imgs/icons/Linked-In.svg" alt="">
                             </a>
                             <a href="https://twitter.com/slsalah_sa" target="_blank">
-                                <i class="fa fa-twitter"></i>
+                                <img src="imgs/icons/icons8-twitterx 1.svg" alt="">
                             </a>
                             <a href="https://www.facebook.com/Slsalah.sa" target="_blank">
-                                <i class="fa fa-facebook"></i>
+                                <img src="imgs/icons/Facebook.svg" alt="">
                             </a>
                             <a href="https://www.instagram.com/slsalah_sa" target="_blank">
-                                <i class="fa fa-instagram"></i>
+                                <img src="imgs/icons/Instagram.svg" alt="">
                             </a>
                         </div>
                     </div>
@@ -449,12 +446,6 @@
                         <h4>تواصل معنا</h4>
                         <ul class="d-flex flex-column gy-5">
                             <li>
-                                <a href="mailto:contact@slsalah.com">
-                                    <img src="imgs/icons/mail.svg" alt="mail-icon" class="img-fluid icon">
-                                    <span>contact@slsalah.com</span>
-                                </a>
-                            </li>
-                            <li>
                                 <a href="tel:+966555881764">
                                     <img src="imgs/icons/phone.svg" alt="phone-icon" class="img-fluid icon">
                                     <span dir="ltr">+966 555 88 1764</span>
@@ -464,6 +455,12 @@
                                 <a href="tel:+966112074129">
                                     <img src="imgs/icons/phone.svg" alt="phone-icon" class="img-fluid icon">
                                     <span dir="ltr">+966 112 07 4129</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="mailto:contact@slsalah.com">
+                                    <img src="imgs/icons/mail.svg" alt="mail-icon" class="img-fluid icon">
+                                    <span>contact@slsalah.com</span>
                                 </a>
                             </li>
                             <li>
@@ -481,13 +478,14 @@
             </div>
         </div>
     </footer>
-
     <div class="copyRight">
         <p>جميع الحقوق محفوظة لشركة سلسلة 2023</p>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

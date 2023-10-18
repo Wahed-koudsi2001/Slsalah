@@ -44,15 +44,22 @@ button {
 }
 
 .navbar-toggler {
-  background: #78A5DF
+  width: 55px;
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
+.navbar-toggler:focus,
 .navbar-toggler:hover {
-  background-color: #95d7f1 !important;
+  box-shadow: none;
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 /************************************ START HEADER  ************************************/
@@ -777,7 +784,7 @@ nav a.active {
   border-radius: 5px;
   color: #FFF;
   text-align: center;
-  font-family: Cabin;
+  font-family: Tajawal;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -900,7 +907,7 @@ nav a.active {
   -o-border-radius: 5px;
   color: #979797;
   text-align: right;
-  font-family: Cabin;
+  font-family: Tajawal;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -969,7 +976,7 @@ nav a.active {
   border-radius: 5px;
   background: #FFF;
   color: #1B4071;
-  font-family: Cabin;
+  font-family: Tajawal;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -989,7 +996,7 @@ nav a.active {
 
 #last-blog .bottom h5 {
   color: #FFF;
-  /* font-family: Cabin; */
+  font-family: Tajawal;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -998,7 +1005,7 @@ nav a.active {
 
 #last-blog .bottom p {
   color: #FFF;
-  /* font-family: Cabin; */
+  font-family: Tajawal;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1008,7 +1015,7 @@ nav a.active {
 
 #last-blog .bottom a {
   color: #FFF;
-  /* font-family: Cabin; */
+  font-family: Tajawal;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -1532,7 +1539,6 @@ footer .last-block a {
 #our-gallery .search button {
   width: 179px;
   height: 54px;
-  padding: 12px 24px;
   margin-left: auto;
   border-radius: 5px;
   background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
@@ -1759,12 +1765,12 @@ footer .last-block a {
   height: 54px;
   padding: 12px;
   margin: auto;
+  background: rgba(27, 64, 113, 0.05);
 }
 
 .search-2 button {
   width: 179px;
   height: 54px;
-  padding: 12px 24px;
   margin-left: auto;
   border-radius: 5px;
   background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
@@ -1909,7 +1915,9 @@ footer .last-block a {
 }
 
 .financial-consulting-bg .headerContent {
-  height: calc(560px - 120px) !important;
+  height: 100% !important;
+  position: relative;
+  z-index: 1;
 }
 
 .financial-consulting-bg::before {
@@ -2140,7 +2148,9 @@ footer .last-block a {
 }
 
 .legal-advice-bg .headerContent {
-  height: calc(560px - 120px) !important;
+  height: 100% !important;
+  position: relative;
+  z-index: 1;
 }
 
 .legal-advice-bg::before {
@@ -2199,7 +2209,9 @@ footer .last-block a {
 }
 
 .human-consulting-bg .headerContent {
-  height: calc(560px - 120px) !important;
+  height: 100% !important;
+  position: relative;
+  z-index: 1;
 }
 
 .human-consulting-bg::before {
@@ -2216,7 +2228,9 @@ footer .last-block a {
 }
 
 .technical-consulting-bg .headerContent {
-  height: calc(560px - 120px) !important;
+  height: 100% !important;
+  position: relative;
+  z-index: 1;
 }
 
 .technical-consulting-bg::before {
@@ -2308,7 +2322,9 @@ footer .last-block a {
 }
 
 .marketing-consulting-bg .headerContent {
-  height: calc(560px - 120px) !important;
+  height: 100% !important;
+  position: relative;
+  z-index: 1;
 }
 
 .marketing-consulting-bg::before {
@@ -2345,7 +2361,9 @@ footer .last-block a {
 }
 
 .marketing-services-bg .headerContent {
-  height: calc(560px - 120px) !important;
+  height: 100% !important;
+  position: relative;
+  z-index: 1;
 }
 
 .marketing-services-bg::before {
@@ -2493,7 +2511,9 @@ footer .last-block a {
 }
 
 .advertising-services-bg .headerContent {
-  height: calc(560px - 120px) !important;
+  height: 100% !important;
+  position: relative;
+  z-index: 1;
 }
 
 .advertising-services-bg::before {
@@ -2504,7 +2524,7 @@ footer .last-block a {
 }
 
 .advertising-services-more-info {
-  padding: 48px 0 !important;
+  padding: 48px 0 0 0 !important;
 }
 
 .advertising-services {
@@ -2530,7 +2550,6 @@ footer .last-block a {
   margin: 48px auto 0;
   display: block;
   width: fit-content;
-  border: 1px solid #304259;
   background: linear-gradient(95deg, #304259 27.16%, #347BD9 170.44%);
   transition: .3s linear;
   -webkit-transition: .3s linear;
@@ -2540,12 +2559,11 @@ footer .last-block a {
 }
 
 .advertising-services .call-us:hover {
-  background: #fff;
-  color: #304259;
+  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%);
+  color: #fff;
 }
 
 #our-design {
-  margin-top: 42px;
   padding-bottom: 48px;
 }
 
@@ -2554,6 +2572,15 @@ footer .last-block a {
   padding: 48px 24px;
   flex-direction: column;
   gap: 24px;
+}
+
+.linear-block {
+  padding: 10px 24px 10px 24px !important;
+}
+
+.linear-block img {
+  width: 60px !important;
+  height: 60px !important;
 }
 
 #our-design .our-design-block img {
@@ -2703,7 +2730,7 @@ footer .last-block a {
   border-radius: 5px;
   background: #FFF;
   color: #1B4071;
-  font-family: Cabin;
+  font-family: Tajawal;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -3159,6 +3186,10 @@ footer .last-block a {
 
   #our-services .last-service-block {
     width: 100%
+  }
+
+  .navbar {
+    height: auto;
   }
 }
 
@@ -3684,7 +3715,7 @@ footer .last-block a {
 #other-testimonial .details .name {
   color: #FFF;
   text-align: center;
-  font-family: Cabin;
+  font-family: Tajawal;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -3987,6 +4018,23 @@ form .submit {
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  width: 100%;
+  background: transparent;
+  /* opacity: 0; */
+  transition: .2s linear;
+  -webkit-transition: .2s linear;
+  -moz-transition: .2s linear;
+  -ms-transition: .2s linear;
+  -o-transition: .2s linear;
+}
+
+.fixed-navbar.active {
+  position: fixed !important;
+  top: 0;
+  opacity: 1;
+  background-color: #78A5DF;
+  width: 100%;
+  z-index: 999999;
 }
 
 .header img {

@@ -119,12 +119,10 @@ function setActiveClass(swiper) {
 function setActiveClass(swiper) {
     var slides = swiper.slides;
     var activeIndex = swiper.activeIndex;
-
     // Remove the active class from all slides
     for (var i = 0; i < slides.length; i++) {
         slides[i].classList.remove('active');
     }
-
     // Add the active class to the middle slide
     var middleSlideIndex = Math.floor(slides.length / 4);
     var activeSlideIndex = (activeIndex + middleSlideIndex) % slides.length;
@@ -174,14 +172,29 @@ function resetCounter() {
     activated = false;
 }
 
-window.addEventListener("scroll", () => {
-    const scrollPosition = window.scrollY;
-    const statisticsOffset = statistics.offsetTop;
-    const windowHeight = window.innerHeight;
+// window.addEventListener("scroll", () => {
+//     const scrollPosition = window.scrollY;
+//     const statisticsOffset = statistics.offsetTop;
+//     const windowHeight = window.innerHeight;
 
-    if (scrollPosition > statisticsOffset - windowHeight && !activated) {
-        startCounter();
-    } else if (scrollPosition < statisticsOffset - windowHeight || scrollPosition === 0) {
-        resetCounter();
+//     if (scrollPosition > statisticsOffset - windowHeight && !activated) {
+//         startCounter();
+//     } else if (scrollPosition < statisticsOffset - windowHeight || scrollPosition === 0) {
+//         resetCounter();
+//     }
+// });
+
+let fixedNavbar = document.querySelectorAll(".fixedNavbar");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY >= 150) {
+        fixedNavbar.forEach((element) => {
+            element.classList.add("active");
+        });
+    } else {
+        fixedNavbar.forEach((element) => {
+            element.classList.remove("active");
+        });
     }
 });
+console.log(fixedNavbar);
