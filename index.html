@@ -93,14 +93,14 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="fa fa-bars"></span>
                 </button>
+                <a class="navbar-brand d-block d-lg-none" href="index.html">
+                    <img src="./imgs/logo.png" alt="logo">
+                </a>
                 <a class="nav-link d-none d-lg-block" href="#testimonial">
                     <button class="ask-request">اطلب استشارّة</button>
                 </a>
                 <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarNav">
                     <ul class="navbar-nav text-center py-4">
-                        <a class="navbar-brand d-block d-lg-none" href="index.html">
-                            <img src="./imgs/logo.png" alt="logo">
-                        </a>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">الصفحة
                                 الرئسية</a>
@@ -1709,47 +1709,29 @@
     <section id="carousel">
         <div class="container">
             <h3>بكل فخر عملاء <span class="main-color">سلسلة</span></h3>
-            <div class="swiper mySwiper-2 row gap-5">
+            <div class="swiper mySwiper-2">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-1.webp" class="img-fluid" alt="logo-1">
+                    <div class="swiper-slide">
+                        <img src="imgs/logos/logo-1.webp" alt="logo" class="img-fluid">
                     </div>
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-2.webp" class="img-fluid" alt="logo-2">
+                    <div class="swiper-slide">
+                        <img src="imgs/logos/logo-2.webp" alt="logo" class="img-fluid">
                     </div>
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-3.webp" class="img-fluid" alt="logo-3">
+                    <div class="swiper-slide">
+                        <img src="imgs/logos/logo-3.webp" alt="logo" class="img-fluid">
                     </div>
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-4.webp" class="img-fluid" alt="logo-4">
+                    <div class="swiper-slide">
+                        <img src="imgs/logos/logo-4.webp" alt="logo" class="img-fluid">
                     </div>
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-5.webp" class="img-fluid" alt="logo-5">
+                    <div class="swiper-slide">
+                        <img src="imgs/logos/logo-5.webp" alt="logo" class="img-fluid">
                     </div>
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-6.webp" class="img-fluid" alt="logo-1">
+                    <div class="swiper-slide">
+                        <img src="imgs/logos/logo-6.webp" alt="logo" class="img-fluid">
                     </div>
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-7.webp" class="img-fluid" alt="logo-2">
+                    <div class="swiper-slide">
+                        <img src="imgs/logos/logo-7.webp" alt="logo" class="img-fluid">
                     </div>
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-1.webp" class="img-fluid" alt="logo-1">
-                    </div>
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-2.webp" class="img-fluid" alt="logo-2">
-                    </div>
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-3.webp" class="img-fluid" alt="logo-3">
-                    </div>
-                    <div class="swiper-slide slide">
-                        <img src="imgs/logos/logo-4.webp" class="img-fluid" alt="logo-4">
-                    </div>
-                </div>
-                <div class="swiper-button-next nav-btn">
-                    <i class="fa fa-arrow-left"></i>
-                </div>
-                <div class="swiper-button-prev nav-btn">
-                    <i class="fa fa-arrow-right"></i>
                 </div>
             </div>
         </div>
@@ -1868,7 +1850,7 @@
                                 <img src="imgs/icons/icons8-twitterx 1.svg" alt="">
                             </a>
                             <a href="https://www.facebook.com/Slsalah.sa" target="_blank">
-                                <img src="imgs/icons/Facebook.svg" alt="">
+                                <img src="imgs/icons/footer-facebook.svg" alt="">
                             </a>
                             <a href="https://www.instagram.com/slsalah_sa" target="_blank">
                                 <img src="imgs/icons/Instagram.svg" alt="">
@@ -1947,13 +1929,11 @@
         data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header justify-content-center">
+                <div class="modal-header d-flex flex-column justify-content-center">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">احجز استشارّة</h1>
+                    <p>استشارة مجانية لمدة 30 دقيقة</p>
                 </div>
-                <div class="modal-body" style="width: 837px; @media (max-width: 991px) { 
-                    .modal-body{
-                        width: 100vw !important
-                    }}">
+                <div class="modal-body">
                     <form class="row needs-validation" novalidate style="width: 100%; margin: auto;">
                         <div class="col-12">
                             <label for="validationCustom01" class="form-label mb-0">

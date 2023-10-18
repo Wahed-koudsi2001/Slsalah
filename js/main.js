@@ -12,19 +12,10 @@ var swiper = new Swiper(".mySwiper", {
 
 var swiper = new Swiper(".mySwiper-2", {
     slidesPerView: 5,
+    spaceBetween: 32,
     grabCursor: true,
     loop: true,
-    breakpoints: {
-        280: {
-            slidesPerView: 2
-        },
-        768: {
-            slidesPerView: 3
-        },
-        991: {
-            slidesPerView: 4
-        }
-    }, autoplay: {
+    autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
@@ -172,17 +163,17 @@ function resetCounter() {
     activated = false;
 }
 
-// window.addEventListener("scroll", () => {
-//     const scrollPosition = window.scrollY;
-//     const statisticsOffset = statistics.offsetTop;
-//     const windowHeight = window.innerHeight;
+window.addEventListener("scroll", () => {
+    const scrollPosition = window.scrollY;
+    const statisticsOffset = statistics.offsetTop;
+    const windowHeight = window.innerHeight;
 
-//     if (scrollPosition > statisticsOffset - windowHeight && !activated) {
-//         startCounter();
-//     } else if (scrollPosition < statisticsOffset - windowHeight || scrollPosition === 0) {
-//         resetCounter();
-//     }
-// });
+    if (scrollPosition > statisticsOffset - windowHeight && !activated) {
+        startCounter();
+    } else if (scrollPosition < statisticsOffset - windowHeight || scrollPosition === 0) {
+        resetCounter();
+    }
+});
 
 let fixedNavbar = document.querySelectorAll(".fixedNavbar");
 
@@ -197,4 +188,3 @@ window.addEventListener("scroll", () => {
         });
     }
 });
-console.log(fixedNavbar);

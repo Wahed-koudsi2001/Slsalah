@@ -732,7 +732,7 @@ nav a.active {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
-  z-index: 999;
+  z-index: 998;
   height: 100%;
   width: 100%;
   display: flex;
@@ -822,15 +822,8 @@ nav a.active {
   margin-bottom: 48px;
 }
 
-#carousel .swiper-wrapper div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#carousel .nav-btn i {
-  color: #000;
-  font-weight: 300;
+#carousel img {
+  object-fit: cover;
 }
 
 /************************************ END carousel  ************************************/
@@ -1218,7 +1211,7 @@ footer .last-block a {
 }
 
 .under-line-title {
-  color: var(--base, #1B4071);
+  color: #1B4071;
   text-align: right;
   font-family: Tajawal;
   font-size: 48px;
@@ -1266,7 +1259,7 @@ footer .last-block a {
 #our-goals h3 {
   color: #FFF;
   text-align: center;
-  font-family: Cabin;
+  font-family: Tajawal;
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
@@ -1290,7 +1283,7 @@ footer .last-block a {
 }
 
 #our-goals .our-goals-block h4 {
-  color: var(--base, #1B4071);
+  color: #1B4071;
   text-align: center;
   font-family: Tajawal;
   font-size: 24px;
@@ -1306,7 +1299,7 @@ footer .last-block a {
 #our-value h3 {
   color: #1B4071;
   text-align: center;
-  font-family: Cabin;
+  font-family: Tajawal;
   font-size: 45px;
   font-style: normal;
   font-weight: 700;
@@ -1420,6 +1413,10 @@ footer .last-block a {
   -ms-transition: .3s linear;
   -o-transition: .3s linear;
   cursor: pointer;
+}
+
+#our-gallery .main-block-gallery .gallery-block:hover {
+  flex-direction: row-reverse;
 }
 
 #our-gallery .main-block-gallery .gallery-block figure {
@@ -1552,6 +1549,10 @@ footer .last-block a {
   line-height: 150%;
 }
 
+#our-gallery .search button:hover {
+  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%)
+}
+
 #our-gallery .main-block {
   margin-top: 96px;
   display: flex;
@@ -1565,6 +1566,21 @@ footer .last-block a {
   border-radius: 0px 0px 10px 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 573px;
+}
+
+#our-gallery .main-block .block a {
+  text-decoration: none;
+}
+
+#our-gallery .main-block .block span {
+  color: #FFF;
+  font-family: Tajawal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration-line: underline;
+
 }
 
 #our-gallery .main-block .block .top {
@@ -1678,16 +1694,6 @@ footer .last-block a {
   line-height: 150%;
 }
 
-#our-gallery .main-block .block .bottom a {
-  color: #FFF;
-  font-family: Cabin;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-decoration-line: underline;
-}
-
 .info-gallery-2 h2 {
   margin-bottom: 48px;
 }
@@ -1720,12 +1726,16 @@ footer .last-block a {
   border: none;
   color: #FFF;
   text-align: center;
-  font-family: Cabin;
+  font-family: Tajawal;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
   line-height: 150%;
   margin: 96px auto;
+}
+
+.read-more:hover {
+  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%);
 }
 
 .search-2 h5 {
@@ -1782,6 +1792,10 @@ footer .last-block a {
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
+}
+
+.search-2 button:hover {
+  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%)
 }
 
 /************************************ END Gallery  ************************************/
@@ -1848,7 +1862,8 @@ footer .last-block a {
 }
 
 #contact-us form .red-star-4 {
-  right: 70px;
+  top: 8px;
+  right: 67px;
 }
 
 #contact-us form input[type="submit"] {
@@ -2816,7 +2831,7 @@ footer .last-block a {
 
 .main-row-three-block .row-three-block div {
   position: absolute;
-  z-index: 999;
+  z-index: 998;
   bottom: 0;
   padding: 12px 24px;
 }
@@ -2850,7 +2865,7 @@ footer .last-block a {
   position: absolute;
   bottom: 12px;
   left: 24px;
-  z-index: 999;
+  z-index: 998;
   color: #1B4071;
   text-align: center;
   font-family: Tajawal;
@@ -3221,7 +3236,6 @@ footer .last-block a {
   }
 
   #video h3,
-  #carousel h3,
   #portfolio h3 {
     font-size: 38px
   }
@@ -3610,6 +3624,11 @@ footer .last-block a {
   #our-services .service-block {
     padding: 10px 8px 10px 10px;
   }
+
+  #other-testimonial .desc {
+    width: 280px !important;
+    font-size: 17px !important;
+  }
 }
 
 /* ------------------------ swiper ------------------------ */
@@ -3823,6 +3842,17 @@ footer .last-block a {
   font-style: normal !important;
   font-weight: 700 !important;
   line-height: 150% !important;
+  margin-bottom: 24px !important;
+}
+
+.modal-header p {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 .modal-dialog {
@@ -3834,6 +3864,12 @@ footer .last-block a {
 .modal-content {
   background: rgba(27, 64, 113, 0.05) !important;
   width: 837px;
+}
+
+@media (max-width: 991px) {
+  .modal-content {
+    max-width: 100% !important;
+  }
 }
 
 .modal-footer button {
@@ -3850,6 +3886,12 @@ footer .last-block a {
 .modal-header,
 .modal-footer {
   border: none !important;
+}
+
+@media (min-width: 992px) {
+  .modal-body {
+    width: 837px;
+  }
 }
 
 .modal-body form {
@@ -3876,20 +3918,27 @@ footer .last-block a {
   margin-top: 16px;
   border-radius: 5px;
   background: #FFF;
-  display: inline-flex;
+  display: flex;
   height: 54px;
   padding: 12px;
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
-  flex-shrink: 0;
   color: #979797;
   text-align: right;
-  font-family: Cabin;
+  font-family: Tajawal;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
+}
+
+@media (max-width: 991px) {
+
+  .modal-body form input,
+  .modal-body form textarea {
+    width: 100% !important;
+  }
 }
 
 .modal-body form textarea {
@@ -3902,7 +3951,7 @@ footer .last-block a {
   flex-shrink: 0;
   resize: none;
   margin-top: 16px;
-  /* font-family: Cabin; */
+  font-family: Tajawal;
 }
 
 form .submit {
@@ -3917,6 +3966,10 @@ form .submit {
   font-weight: 800;
   line-height: 150%;
   border: none;
+}
+
+form .submit:hover {
+  background: linear-gradient(119deg, #78A5DF 1.6%, #347BD9 99.59%)
 }
 
 .invalid-feedback {
@@ -3945,7 +3998,7 @@ form .submit {
 
 .flag-input img {
   position: absolute;
-  top: 33%;
+  top: 20%;
   transform: translateY(50%);
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
@@ -4034,7 +4087,7 @@ form .submit {
   opacity: 1;
   background-color: #78A5DF;
   width: 100%;
-  z-index: 999999;
+  z-index: 999;
 }
 
 .header img {
