@@ -793,14 +793,26 @@ nav a.active {
   background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%);
 }
 
-
 #planning .swiper-3d .swiper-slide-shadow {
   background-color: transparent !important;
 }
 
-#planning img {
-  width: 100%;
-  object-fit: cover;
+#planning .up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+}
+
+#planning .imgs-container {
+  width: 607px;
+}
+
+@media (max-width: 1400px) {
+  #planning .up {
+    flex-direction: column;
+    gap: 0
+  }
 }
 
 #planning .planning-content {
@@ -3297,17 +3309,12 @@ footer .last-block a {
     width: 100%;
   }
 
-  #planning .up {
-    flex-direction: column;
-  }
-
   #planning .imgs-container {
     width: 100%;
   }
 
   #planning .planning-content {
     width: 100%;
-    justify-content: flex-start;
   }
 
   #more-about-us .more-about-us-block-2 {
@@ -3385,33 +3392,19 @@ footer .last-block a {
   .navbar {
     height: auto;
   }
+
+  #planning .up {
+    gap: 64px;
+  }
+
+  #planning .up img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   #other-testimonial .desc {
     width: 350px !important;
-  }
-
-  .header .swiper-pagination {
-    padding-left: 40px !important;
-  }
-
-  .header .swiper-pagination .swiper-pagination-bullet-active {
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-  }
-
-  .swiper-pagination-vertical.swiper-pagination-bullets,
-  .swiper-vertical>.swiper-pagination-bullets {
-    top: 100% !important;
-    transform: rotate(90deg);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
   }
 
   #video h3,
@@ -3468,10 +3461,6 @@ footer .last-block a {
     height: 100%
   }
 
-  #planning .up {
-    gap: 0px;
-  }
-
   .main-row-three-block {
     flex-direction: column;
     align-items: center;
@@ -3485,11 +3474,6 @@ footer .last-block a {
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.show {
     width: 100% !important;
-  }
-
-  .header .swiper-pagination {
-    margin-top: -80px;
-    margin-right: -10px;
   }
 
   .headerContent h1 {
