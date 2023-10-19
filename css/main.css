@@ -1904,6 +1904,12 @@ footer .last-block a {
   padding: 0;
   margin-bottom: 48px;
   text-align: center;
+  position: relative;
+  z-index: 9;
+}
+
+#contact-us form input[type="submit"]:hover {
+  background: linear-gradient(45deg, #78A5DF 11.59%, #1B4071 150%)
 }
 
 #contact-us form input,
@@ -3049,6 +3055,10 @@ footer .last-block a {
 
 /************************************ END Blog  ************************************/
 @media (max-width: 991px) {
+  .main-row-three-block .row-three-block a {
+    display: none;
+  }
+
   .info-gallery nav a {
     color: #fff;
   }
@@ -3063,6 +3073,8 @@ footer .last-block a {
 
   #info-gallery .second-row .info-gallery-img {
     margin-bottom: 40px;
+    position: relative;
+    z-index: -1;
   }
 
   #info-gallery .second-row p,
@@ -3142,7 +3154,6 @@ footer .last-block a {
 
   #more-about-us .more-about-us-block {
     flex-direction: column;
-    gap: 0px;
   }
 
   .more-info-2 figure img {
@@ -3649,7 +3660,7 @@ footer .last-block a {
   }
 
   #info-gallery {
-    padding: 140px 0 !important;
+    padding: 160px 0 !important;
   }
 
   #our-services .service-block {
@@ -3659,6 +3670,10 @@ footer .last-block a {
   #other-testimonial .desc {
     width: 280px !important;
     font-size: 17px !important;
+  }
+
+  .info-gallery li {
+    width: 100%;
   }
 }
 
@@ -4234,5 +4249,64 @@ form .submit:hover {
 @media (max-width: 500px) {
   .container-layer {
     height: 420px !important;
+  }
+}
+
+
+.fixedNavbar.active .nav-link-3,
+.fixedNavbar.active a.nav-link-3,
+.fixedNavbar.active svg path,
+.fixedNavbar.active a span {
+  color: #fff !important;
+  fill: #fff;
+}
+
+.fixedNavbar.active .dark-icon-1 {
+  display: none !important;
+}
+
+.fixedNavbar.active .navbar-toggler {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+.fixedNavbar.active .if-not-active {
+  display: block !important;
+}
+
+
+
+.if-not-active-2 {
+  display: none;
+}
+
+.fixedNavbar.active .if-not-active-2 {
+  display: block;
+}
+
+
+.if-not-active-5 {
+  display: block;
+}
+
+.fixedNavbar.active .if-not-active-5 {
+  display: none;
+}
+
+.if-not-active-6 {
+  display: none;
+}
+
+.fixedNavbar.active .if-not-active-6 {
+  display: block;
+}
+
+@media (max-width: 991px) {
+  .fixedNavbar.active .if-not-active {
+    display: none;
+  }
+
+  .aaaa {
+    display: none !important;
   }
 }
