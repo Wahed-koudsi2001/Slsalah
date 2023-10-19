@@ -370,21 +370,22 @@ nav a.active {
 }
 
 #articles .main-articles-block {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 24px;
 }
 
 #articles .articles-block {
-  position: relative;
+  width: 300px;
+  cursor: context-menu;
 }
 
 #articles .articles-block img {
   width: 100%;
 }
 
-#articles .main-articles-block .content {
+#articles .articles-block .content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -397,7 +398,7 @@ nav a.active {
   -o-transform: translate(-50%, -50%);
 }
 
-#articles .main-articles-block .title {
+#articles .articles-block .title {
   color: #333;
   text-align: center;
   font-family: Tajawal;
@@ -407,7 +408,7 @@ nav a.active {
   line-height: 150%;
 }
 
-#articles .main-articles-block .description {
+#articles .articles-block .description {
   color: #333;
   text-align: center;
   font-family: Tajawal;
@@ -435,27 +436,27 @@ nav a.active {
 }
 
 #articles .articles-block .content.three .title {
-  padding: 75px 35px 0 130px
+  padding: 75px 35px 0 130px;
 }
 
 #articles .articles-block .content.three .description {
-  padding: 60px 0px 0 125px;
+  padding: 65px 0px 0 140px;
 }
 
 #articles .articles-block .content.four .title {
-  padding: 74px 35px 0 118px;
+  padding: 75px 35px 0 118px;
 }
 
 #articles .articles-block .content.four .description {
-  padding: 74px 0px 0 115px;
+  padding: 75px 12px 0 125px
 }
 
 #articles .articles-block .content.five .title {
-  padding: 10px 35px 0 118px;
+  padding: 15px 35px 0 118px
 }
 
 #articles .articles-block .content.five .description {
-  padding: 30px 0px 0 120px;
+  padding: 30px 0px 0 130px
 }
 
 #articles .articles-block .content.six .title {
@@ -495,11 +496,11 @@ nav a.active {
 }
 
 #articles .articles-block .content.ten .description {
-  padding: 80px 0px 0 125px;
+  padding: 75px 0px 0 110px;
 }
 
 #articles .articles-block .content.eleven .title {
-  padding: 50px 13px 0 115px
+  padding: 50px 13px 0 110px;
 }
 
 #articles .articles-block .content.eleven .description {
