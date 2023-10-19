@@ -8,6 +8,10 @@ a {
   text-decoration: none;
 }
 
+section {
+  overflow: hidden;
+}
+
 figure {
   margin: 0;
 }
@@ -393,11 +397,6 @@ nav a.active {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  transition: all .2s linear;
-  -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  -ms-transition: all .2s linear;
-  -o-transition: all .2s linear;
   min-height: 100%;
   cursor: pointer;
 }
@@ -640,6 +639,34 @@ nav a.active {
 
 #planning .imgs-container {
   flex: 1 0 0
+}
+
+#planning .imgs-container .container-layer {
+  position: relative;
+}
+
+#planning .imgs-container .container-layer .img {
+  position: absolute;
+}
+
+#planning .imgs-container .container-layer .img.img-1 {
+  top: 60px;
+  left: 0px;
+}
+
+#planning .imgs-container .container-layer .img.img-2 {
+  top: 40px;
+  left: 20px;
+}
+
+#planning .imgs-container .container-layer .img.img-3 {
+  top: 20px;
+  left: 40px;
+}
+
+#planning .imgs-container .container-layer .img.img-4 {
+  top: 0px;
+  left: 60px;
 }
 
 #planning .planning-content {
@@ -2213,6 +2240,10 @@ footer .last-block a {
   background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%) !important;
 }
 
+.aaa {
+  padding-bottom: 0 !important;
+}
+
 .more-info-3 p {
   color: #fff !important;
 }
@@ -3001,7 +3032,7 @@ footer .last-block a {
   color: #1B4071;
   text-align: center;
   font-family: Tajawal;
-  font-size: 48px;
+  font-size: 58px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -4168,4 +4199,40 @@ form .submit:hover {
 #testimonial-2 .swiper-pagination-custom,
 #testimonial-2 .swiper-pagination-fraction {
   bottom: -68px !important;
+}
+
+@media (max-width: 991px) {
+  #planning .imgs-container .container-layer .img.img-1 {
+    top: 60px;
+    left: 0px;
+  }
+
+  #planning .imgs-container .container-layer .img.img-2 {
+    top: 40px;
+    left: 0px;
+  }
+
+  #planning .imgs-container .container-layer .img.img-3 {
+    top: 20px;
+    left: 0px;
+  }
+
+  #planning .imgs-container .container-layer .img.img-4 {
+    top: 0px;
+    left: 0px;
+  }
+
+  #planning .planning-content {
+    height: auto !important;
+  }
+
+  .container-layer {
+    height: 530px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .container-layer {
+    height: 420px !important;
+  }
 }

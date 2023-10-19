@@ -1,3 +1,5 @@
+AOS.init();
+
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     pagination: {
@@ -64,6 +66,7 @@ var swiper = new Swiper(".mySwiper-4", {
 
 var swiper = new Swiper(".mySwiper-5", {
     spaceBetween: 48,
+    grabCursor: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
