@@ -113,6 +113,15 @@ var swiper = new Swiper(".mySwiper-5", {
     },
 });
 
+var swiper = new Swiper(".mySwiper-6", {
+    effect: "cards",
+    grabCursor: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+    }
+});
+
 
 function setActiveClass(swiper) {
     var slides = swiper.slides;
