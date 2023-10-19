@@ -313,6 +313,8 @@ nav a.active {
   -o-border-radius: 10px;
   position: relative;
   z-index: 2;
+  width: 100%;
+  height: 100%;
 }
 
 #video .video-container .video-icon {
@@ -351,6 +353,142 @@ nav a.active {
 /************************************ EN VIDEO  ************************************/
 
 /************************************ START ARTICLEL  ************************************/
+#articles {
+  padding: 128px 0;
+  background: rgba(27, 64, 113, 0.05);
+}
+
+#articles h3 {
+  color: #1B4071;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
+#articles .main-articles-block {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  justify-content: center;
+}
+
+#articles .articles-block {
+  position: relative;
+}
+
+#articles .articles-block img {
+  width: 100%;
+}
+
+#articles .main-articles-block .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#articles .main-articles-block .title {
+  color: #333;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+#articles .main-articles-block .description {
+  color: #333;
+  text-align: center;
+  font-family: Tajawal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  display: none;
+}
+
+#articles .articles-block .content.one .title {
+  padding: 74px 65px 75px 118px;
+}
+
+#articles .articles-block .content.one .description {
+  padding: 75px 0px 0 80px;
+}
+
+#articles .articles-block .content.two .title {
+  padding: 10px 50px 75px 118px;
+}
+
+#articles .articles-block .content.two .description {
+  padding: 75px 0px 0 105px;
+}
+
+#articles .articles-block .content.three .title {
+  padding: 75px 35px 0 130px
+}
+
+#articles .articles-block .content.three .description {
+  padding: 60px 0px 0 125px;
+}
+
+#articles .articles-block .content.four .title {
+  padding: 74px 35px 0 118px;
+}
+
+#articles .articles-block .content.four .description {
+  padding: 74px 0px 0 115px;
+}
+
+#articles .articles-block .content.five .title {
+  padding: 10px 35px 0 118px;
+}
+
+#articles .articles-block .content.five .description {
+  padding: 30px 0px 0 120px;
+}
+
+#articles .articles-block .content.six .title {
+  padding: 50px 35px 0 118px;
+}
+
+#articles .articles-block .content.six .description {
+  padding: 80px 0px 0 120px;
+}
+
+#articles .articles-block .content.seven .title {
+  padding: 50px 35px 0 118px;
+}
+
+#articles .articles-block .content.seven .description {
+  padding: 100px 0px 0 110px;
+}
+
+#articles .articles-block .content.eight .title {
+  padding: 50px 35px 0 118px;
+}
+
+#articles .articles-block .content.eight .description {
+  padding: 100px 0px 0 110px;
+}
+
+#articles .articles-block:hover .content .title {
+  display: none;
+}
+
+#articles .articles-block:hover .description {
+  display: block;
+}
 
 /************************************ END ARTICLEL  ************************************/
 
@@ -851,6 +989,10 @@ nav a.active {
 
 #carousel img {
   object-fit: cover;
+}
+
+#carousel i {
+  color: #000;
 }
 
 /************************************ END carousel  ************************************/
@@ -1522,7 +1664,7 @@ footer .last-block a {
   align-items: center;
   color: #FFF;
   text-align: center;
-  font-family: Cabin;
+  font-family: Tajawal;
   font-size: 20px;
   font-style: normal;
   font-weight: 600;
@@ -3536,6 +3678,7 @@ footer .last-block a {
   }
 
   #video,
+  #articles,
   #statistics,
   #services,
   #testimonial,

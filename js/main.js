@@ -13,14 +13,33 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".mySwiper-2", {
-    slidesPerView: 5,
+    slidesPerView: 4,
     spaceBetween: 32,
     grabCursor: true,
     loop: true,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
     autoplay: {
         delay: 5000,
         disableOnInteraction: false,
     },
+    breakpoints: {
+        300: {
+            slidesPerView: 1
+        },
+        768: {
+            slidesPerView: 2
+        },
+        991: {
+            slidesPerView: 3
+        },
+        1200: {
+            slidesPerView: 4
+        }
+    }
+
 });
 
 var swiper = new Swiper(".mySwiper-3", {
