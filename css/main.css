@@ -482,6 +482,30 @@ nav a.active {
   padding: 100px 0px 0 110px;
 }
 
+#articles .articles-block .content.nine .title {
+  padding: 50px 35px 0 118px;
+}
+
+#articles .articles-block .content.nine .description {
+  padding: 100px 0px 0 110px;
+}
+
+#articles .articles-block .content.ten .title {
+  padding: 50px 10px 0 130px
+}
+
+#articles .articles-block .content.ten .description {
+  padding: 80px 0px 0 125px;
+}
+
+#articles .articles-block .content.eleven .title {
+  padding: 50px 13px 0 115px
+}
+
+#articles .articles-block .content.eleven .description {
+  padding: 70px 0px 0 110px;
+}
+
 #articles .articles-block:hover .content .title {
   display: none;
 }
