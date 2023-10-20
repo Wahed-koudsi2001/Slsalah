@@ -7,10 +7,11 @@ var swiper = new Swiper(".mySwiper", {
         clickable: true,
     },
     autoplay: {
-        delay: 25000,
+        delay: 5000,
         disableOnInteraction: false,
     },
-    touchMoveStopPropagation: true, // Disable touch interaction for swiper container
+    touchMoveStopPropagation: true,
+    allowTouchMove: false,
 });
 
 var swiper = new Swiper(".mySwiper-2", {

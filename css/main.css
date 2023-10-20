@@ -3473,8 +3473,8 @@ footer .last-block a {
 
 @media (max-width: 575px) {
   .header h1 {
-    font-size: 34px;
-    width: 270px;
+    font-size: 26px;
+    width: 300px;
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.show {
