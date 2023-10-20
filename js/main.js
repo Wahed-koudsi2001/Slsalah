@@ -221,7 +221,7 @@ function animateImages() {
         image.style.transform = 'translateX(200%)';
         setTimeout(function () {
             image.style.transform = 'translateX(0)';
-        }, (index + 1) * 2000);
+        }, (index + 1) * 1500);
     });
 }
 

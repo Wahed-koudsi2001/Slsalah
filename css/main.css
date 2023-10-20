@@ -3286,7 +3286,6 @@ footer .last-block a {
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.show {
     width: 450px !important;
-    height: auto;
     flex-direction: row;
     gap: 0;
     position: absolute;
@@ -3900,7 +3899,8 @@ footer .last-block a {
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.show {
-    padding: 30px !important;
+    padding: 10px 30px !important;
+    height: 307px;
   }
 
   .card-slider {
