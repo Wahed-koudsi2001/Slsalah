@@ -4,6 +4,10 @@ body {
   direction: rtl;
 }
 
+.swiper-vertical {
+  touch-action: initial !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -3469,7 +3473,8 @@ footer .last-block a {
 
 @media (max-width: 575px) {
   .header h1 {
-    font-size: 38px;
+    font-size: 34px;
+    width: 270px;
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.show {
@@ -4412,3 +4417,6 @@ form .submit:hover {
     display: none !important;
   }
 }
+
+
+@media (max-width: 500px) {}
