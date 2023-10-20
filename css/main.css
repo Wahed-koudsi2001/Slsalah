@@ -2777,6 +2777,10 @@ footer .last-block a {
   gap: 48px;
 }
 
+.wahed-marketing-consulting-3 {
+  background: linear-gradient(87deg, #78A5DF -13.5%, #304259 93.99%) !important;
+}
+
 #marketing-content .marketing-content-main-block .marketing-content-block img {
   width: 100px;
   height: 100px;
@@ -3508,6 +3512,10 @@ footer .last-block a {
 
   #contact-us .contact-us-row .iframe iframe {
     width: 100%;
+  }
+
+  .marketing-consulting-3 h3 {
+    text-align: center;
   }
 }
 
