@@ -3297,7 +3297,7 @@ footer .last-block a {
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.show li {
-    gap: 8px 0;
+    gap: 5px 0;
   }
 
   .dropdown-menu[data-bs-popper] {
