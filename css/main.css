@@ -3477,6 +3477,10 @@ footer .last-block a {
     width: 300px;
   }
 
+  .header .swiper-pagination {
+    padding-left: 30px !important;
+  }
+
   .navbar-expand-lg .navbar-nav .dropdown-menu.show {
     width: 100% !important;
   }
