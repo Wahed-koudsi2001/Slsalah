@@ -4167,6 +4167,32 @@ footer .last-block a {
   width: 837px;
 }
 
+.modal-content .close {
+  width: 50px;
+  background: #78A5DF;
+  height: 50px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-right: 30px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .modal-content .close {
+    display: flex;
+  }
+}
+
+.modal-content .close svg {
+  font-size: 24px;
+}
+
+.modal-content .close svg path {
+  fill: #fff;
+}
+
 @media (max-width: 991px) {
   .modal-content {
     max-width: 100% !important;
