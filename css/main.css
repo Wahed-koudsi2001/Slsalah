@@ -1985,8 +1985,19 @@ footer .last-block a {
   padding: 100px 0;
 }
 
+#contact-us .contact-us-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+#contact-us .contact-us-row .inputs {
+  width: 545px;
+}
+
 #contact-us .contact-us-block h3 {
-  color: var(--base, #1B4071);
+  color: #1B4071;
   text-align: right;
   font-family: Tajawal;
   font-size: 48px;
@@ -2007,9 +2018,7 @@ footer .last-block a {
 }
 
 #contact-us form input {
-  border: 1px solid #E0E0E0 !important;
   height: 50px;
-  padding: 12px 20px;
   color: #828282;
   text-align: right;
   font-family: Tajawal;
@@ -2030,20 +2039,20 @@ footer .last-block a {
 }
 
 #contact-us form .red-star-1 {
-  right: 71px;
+  right: 60px;
 }
 
 #contact-us form .red-star-2 {
-  right: 122px;
+  right: 112px;
 }
 
 #contact-us form .red-star-3 {
-  right: 95px;
+  right: 85px;
 }
 
 #contact-us form .red-star-4 {
-  top: 8px;
-  right: 67px;
+  top: 5px;
+  right: 65px;
 }
 
 #contact-us form input[type="submit"] {
@@ -2103,7 +2112,14 @@ footer .last-block a {
 
 #contact-us iframe {
   height: 700px;
-  width: 100%;
+  width: 545px;
+}
+
+.was-validated .red-star-1,
+.was-validated .red-star-2,
+.was-validated .red-star-3,
+.was-validated .red-star-4 {
+  display: none;
 }
 
 /************************************ END Caontact US  ************************************/
@@ -3404,6 +3420,22 @@ footer .last-block a {
   #planning .up img {
     width: 100%;
   }
+
+  #contact-us .contact-us-row {
+    flex-direction: column;
+  }
+
+  #contact-us .contact-us-row .inputs {
+    width: 100%;
+  }
+
+  #contact-us .contact-us-row .iframe {
+    width: 100%;
+  }
+
+  #contact-us .contact-us-row .iframe iframe {
+    width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -4423,4 +4455,7 @@ form .submit:hover {
 }
 
 
-@media (max-width: 500px) {}
+#contact-us .form-control.is-invalid,
+#contact-us .was-validated .form-control:invalid #contact-us form .red-star-1 {
+  display: none;
+}
