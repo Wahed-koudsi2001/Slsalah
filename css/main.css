@@ -377,7 +377,7 @@ nav a.active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 10px 24px;
 }
 
 #articles .articles-block {
@@ -2126,8 +2126,8 @@ footer .last-block a {
 
 /************************************ START Services  ************************************/
 .financial-consulting-bg {
-  background: url(../imgs/service-1.webp) no-repeat top center/cover !important;
-  height: 660px !important;
+  background: url(../imgs/service-1.webp) no-repeat center center/cover !important;
+  height: 560px !important;
   position: relative;
 }
 
@@ -2359,8 +2359,8 @@ footer .last-block a {
 }
 
 .legal-advice-bg {
-  background: url(../imgs/service-2.webp) no-repeat top center/cover !important;
-  height: 660px !important;
+  background: url(../imgs/service-2.webp) no-repeat center center/cover !important;
+  height: 560px !important;
   position: relative;
 }
 
@@ -2424,8 +2424,8 @@ footer .last-block a {
 }
 
 .human-consulting-bg {
-  background: url(../imgs/service-3.webp) no-repeat top center/cover !important;
-  height: 660px !important;
+  background: url(../imgs/service-3.webp) no-repeat center center/cover !important;
+  height: 560px !important;
   position: relative;
 }
 
@@ -2443,8 +2443,8 @@ footer .last-block a {
 }
 
 .technical-consulting-bg {
-  background: url(../imgs/service-4.webp) no-repeat top center/cover !important;
-  height: 660px !important;
+  background: url(../imgs/service-4.webp) no-repeat center center/cover !important;
+  height: 560px !important;
   position: relative;
 }
 
@@ -2537,8 +2537,8 @@ footer .last-block a {
 }
 
 .marketing-consulting-bg {
-  background: url(../imgs/service-5.webp) no-repeat top center/cover !important;
-  height: 660px !important;
+  background: url(../imgs/service-5.webp) no-repeat center center/cover !important;
+  height: 560px !important;
   position: relative;
 }
 
@@ -2576,8 +2576,8 @@ footer .last-block a {
 }
 
 .marketing-services-bg {
-  background: url(../imgs/service-6.webp) no-repeat top center/cover !important;
-  height: 660px !important;
+  background: url(../imgs/service-6.webp) no-repeat center center/cover !important;
+  height: 560px !important;
   position: relative;
 }
 
@@ -2726,8 +2726,8 @@ footer .last-block a {
 }
 
 .advertising-services-bg {
-  background: url(../imgs/service-7.webp) no-repeat top center/cover !important;
-  height: 660px !important;
+  background: url(../imgs/service-7.webp) no-repeat center center/cover !important;
+  height: 560px !important;
   position: relative;
 }
 
@@ -2874,7 +2874,7 @@ footer .last-block a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 60px;
+  gap: 50px;
 }
 
 #info-gallery .first-row .first-row-blog .first-row-blog-blog span {
@@ -2894,7 +2894,11 @@ footer .last-block a {
 
 #info-gallery .second-row .info-gallery-img {
   margin-bottom: 128px;
-  border-radius: 15px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 
 #info-gallery .second-row .info-blog-img-2 {
@@ -3381,6 +3385,7 @@ footer .last-block a {
   #more-info .p {
     width: 100%;
     text-align: center;
+    font-size: 24px;
   }
 
   .swiper-slide.active {
@@ -3518,7 +3523,7 @@ footer .last-block a {
   }
 
   .headerContent h1 {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   #testimonial h3 {
@@ -3583,11 +3588,11 @@ footer .last-block a {
   }
 
   #our-gallery .main-block-gallery .gallery-block h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   #our-gallery .main-block-gallery .gallery-block p {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   #planning figure {
@@ -3600,15 +3605,15 @@ footer .last-block a {
   }
 
   #cta .row h3 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   #cta .row p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   #cta-2 p {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   #another-cta .another-cta-text {
@@ -3646,7 +3651,7 @@ footer .last-block a {
 
   .marketing-consulting h3 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 20px;
   }
 
@@ -3754,13 +3759,13 @@ footer .last-block a {
   }
 
   #our-importent h4 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 800;
     margin-bottom: 20px;
   }
 
   #our-importent p {
-    font-size: 23px;
+    font-size: 20px;
   }
 
   #our-services h3 {
@@ -3769,15 +3774,15 @@ footer .last-block a {
 
   .marketing-consulting-3 .marketing-consulting-3-block h4 {
     font-weight: 800;
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .marketing-consulting-3 .marketing-consulting-3-block p {
-    font-size: 19px !important;
+    font-size: 16px !important;
   }
 
   #marketing-content h3 {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   #marketing-content .marketing-content-main-block .marketing-content-block {
@@ -3785,7 +3790,7 @@ footer .last-block a {
   }
 
   #marketing-content .marketing-content-main-block .marketing-content-block p {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .advertising-services h3 {
@@ -3819,7 +3824,7 @@ footer .last-block a {
   }
 
   #info-gallery h2 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   #info-gallery {
@@ -3827,7 +3832,7 @@ footer .last-block a {
   }
 
   #our-services .service-block {
-    padding: 10px 8px 10px 10px;
+    padding: 10px 0px 10px 10px;
   }
 
   #other-testimonial .desc {
@@ -3837,6 +3842,56 @@ footer .last-block a {
 
   .info-gallery li {
     width: 100%;
+  }
+
+  #last-blog .bottom h5 {
+    font-size: 16px;
+  }
+
+  #last-blog .bottom p {
+    font-size: 12px;
+  }
+
+  #last-blog .bottom a {
+    font-size: 16px;
+  }
+
+  .gallery-bg .headerContent {
+    width: 100%;
+  }
+
+  #info-gallery .second-row p,
+  #info-gallery .second-row ul {
+    font-size: 24px;
+  }
+
+  .search-2 p {
+    font-size: 20px;
+  }
+
+  #our-gallery .main-block .block span,
+  #info-gallery .row-three .info-row-three-block-read-more a {
+    font-size: 16px;
+  }
+
+  .navbar-expand-lg .navbar-nav .dropdown-menu.show {
+    padding: 30px !important;
+  }
+
+  .card-slider {
+    height: 420px !important;
+  }
+
+  .marketing-consulting-3 h3 {
+    font-size: 32px;
+  }
+
+  #more-info .p {
+    font-size: 22px;
+  }
+
+  #testimonial-2 h2 {
+    font-size: 26px;
   }
 }
 
@@ -4062,6 +4117,12 @@ footer .last-block a {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+}
+
+@media (max-width: 575px) {
+  .modal-header p {
+    font-size: 20px;
+  }
 }
 
 .modal-dialog {
@@ -4458,4 +4519,14 @@ form .submit:hover {
 #contact-us .form-control.is-invalid,
 #contact-us .was-validated .form-control:invalid #contact-us form .red-star-1 {
   display: none;
+}
+
+@media (max-width: 575px) {
+
+  #testimonial-2 .swiper-horizontal>.swiper-pagination-bullets,
+  #testimonial-2 .swiper-pagination-bullets.swiper-pagination-horizontal,
+  #testimonial-2 .swiper-pagination-custom,
+  #testimonial-2 .swiper-pagination-fraction {
+    bottom: -48px !important;
+  }
 }
