@@ -3290,6 +3290,7 @@ footer .last-block a {
     gap: 0;
     position: absolute;
     left: 50%;
+    padding: 10px 30px;
   }
 
   #other-testimonial .desc {
@@ -3899,7 +3900,6 @@ footer .last-block a {
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.show {
-    padding: 10px 30px !important;
     height: 307px;
   }
 
