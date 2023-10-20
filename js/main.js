@@ -128,13 +128,9 @@ var swiper = new Swiper(".mySwiper-6", {
 function setActiveClass(swiper) {
     var slides = swiper.slides;
     var activeIndex = swiper.activeIndex;
-
-    // Remove the active class from all slides
     for (var i = 0; i < slides.length; i++) {
         slides[i].classList.remove('active');
     }
-
-    // Add the active class to the middle slide
     var middleSlideIndex = Math.floor(slides.length / 3);
     var activeSlideIndex = (activeIndex + middleSlideIndex) % slides.length;
     slides[activeSlideIndex].classList.add('active');
@@ -143,18 +139,15 @@ function setActiveClass(swiper) {
 function setActiveClass(swiper) {
     var slides = swiper.slides;
     var activeIndex = swiper.activeIndex;
-    // Remove the active class from all slides
     for (var i = 0; i < slides.length; i++) {
         slides[i].classList.remove('active');
     }
-    // Add the active class to the middle slide
     var middleSlideIndex = Math.floor(slides.length / 4);
     var activeSlideIndex = (activeIndex + middleSlideIndex) % slides.length;
     slides[activeSlideIndex].classList.add('active');
 }
 
 const forms = document.querySelectorAll('.needs-validation')
-// Loop over them and prevent submission
 Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
         if (!form.checkValidity()) {
@@ -221,3 +214,48 @@ window.addEventListener("scroll", () => {
         });
     }
 });
+
+function animateImages() {
+    var images = document.querySelectorAll('#more-about-us .imgs img');
+    images.forEach(function (image, index) {
+        image.style.transform = 'translateX(200%)';
+        setTimeout(function () {
+            image.style.transform = 'translateX(0)';
+        }, (index + 1) * 2000);
+    });
+}
+
+function handleScroll() {
+    var section = document.getElementById('more-about-us');
+    var sectionTop = section.offsetTop;
+    var windowHeight = window.innerHeight;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > sectionTop - windowHeight + windowHeight / 2) {
+        animateImages();
+        window.removeEventListener('scroll', handleScroll);
+        window.addEventListener('scroll', handleScrollReverse);
+    }
+}
+
+function handleScrollReverse() {
+    var section = document.getElementById('more-about-us');
+    var sectionTop = section.offsetTop;
+    var windowHeight = window.innerHeight;
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop < sectionTop - windowHeight + windowHeight / 2) {
+        resetImages();
+        window.removeEventListener('scroll', handleScrollReverse);
+        window.addEventListener('scroll', handleScroll);
+    }
+}
+
+function resetImages() {
+    var images = document.querySelectorAll('#more-about-us .imgs img');
+
+    images.forEach(function (image) {
+        image.style.transform = 'translateX(200%)';
+    });
+}
+
+window.addEventListener('scroll', handleScroll);
