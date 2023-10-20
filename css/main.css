@@ -3605,7 +3605,7 @@ footer .last-block a {
   }
 
   #cta .row h3 {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   #cta .row p {
@@ -3695,7 +3695,7 @@ footer .last-block a {
 
   #our-goals h3,
   #our-value h3 {
-    font-size: 70px;
+    font-size: 55px;
   }
 
   #contact-us iframe {
@@ -3846,6 +3846,7 @@ footer .last-block a {
 
   #last-blog .bottom h5 {
     font-size: 16px;
+    width: 100%;
   }
 
   #last-blog .bottom p {
@@ -3854,6 +3855,7 @@ footer .last-block a {
 
   #last-blog .bottom a {
     font-size: 16px;
+    width: 100%;
   }
 
   .gallery-bg .headerContent {
@@ -3872,6 +3874,7 @@ footer .last-block a {
   #our-gallery .main-block .block span,
   #info-gallery .row-three .info-row-three-block-read-more a {
     font-size: 16px;
+    width: 100%;
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.show {
@@ -3892,6 +3895,12 @@ footer .last-block a {
 
   #testimonial-2 h2 {
     font-size: 26px;
+  }
+
+  #carousel h3,
+  #other-testimonial h3,
+  #last-blog h3 {
+    font-size: 34px;
   }
 }
 
