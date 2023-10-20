@@ -89,7 +89,7 @@ button {
   color: #FFF;
   text-align: center;
   font-family: Tajawal;
-  font-size: 64px;
+  font-size: 65px;
   font-style: normal;
   line-height: 150%;
   font-weight: 900;
@@ -166,7 +166,7 @@ nav ul li a:hover svg path {
 
 .header h1 {
   font-family: Tajawal;
-  font-size: 64px;
+  font-size: 55px;
   font-weight: 700;
   line-height: 96px;
   letter-spacing: 0em;
@@ -377,11 +377,11 @@ nav a.active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px 24px;
+  gap: 10px 20px;
 }
 
 #articles .articles-block {
-  width: 300px;
+  width: 260px;
   cursor: context-menu;
 }
 
@@ -424,91 +424,91 @@ nav a.active {
 }
 
 #articles .articles-block .content.one .title {
-  padding: 74px 65px 75px 118px;
+  padding: 74px 40px 75px 118px;
 }
 
 #articles .articles-block .content.one .description {
-  padding: 75px 0px 0 80px;
+  padding: 60px 0 0 84px;
 }
 
 #articles .articles-block .content.two .title {
-  padding: 10px 50px 75px 118px;
+  padding: 5px 40px 75px 118px
 }
 
 #articles .articles-block .content.two .description {
-  padding: 75px 0px 0 105px;
+  padding: 60px 0px 0 100px
 }
 
 #articles .articles-block .content.three .title {
-  padding: 75px 35px 0 130px;
+  padding: 74px 40px 75px 118px
 }
 
 #articles .articles-block .content.three .description {
-  padding: 65px 0px 0 140px;
+  padding: 40px 0px 0 105px
 }
 
 #articles .articles-block .content.four .title {
-  padding: 75px 35px 0 118px;
+  padding: 74px 40px 75px 118px;
 }
 
 #articles .articles-block .content.four .description {
-  padding: 75px 12px 0 125px
+  padding: 60px 0 0 95px
 }
 
 #articles .articles-block .content.five .title {
-  padding: 15px 35px 0 118px
+  padding: 5px 40px 75px 118px;
 }
 
 #articles .articles-block .content.five .description {
-  padding: 30px 0px 0 130px
+  padding: 20px 0 0 102px
 }
 
 #articles .articles-block .content.six .title {
-  padding: 50px 35px 0 118px;
+  padding: 40px 35px 0 118px
 }
 
 #articles .articles-block .content.six .description {
-  padding: 80px 0px 0 120px;
+  padding: 70px 0px 0 91px;
 }
 
 #articles .articles-block .content.seven .title {
-  padding: 50px 35px 0 118px;
+  padding: 40px 25px 0 100px;
 }
 
 #articles .articles-block .content.seven .description {
-  padding: 100px 0px 0 110px;
+  padding: 80px 0px 0 100px
 }
 
 #articles .articles-block .content.eight .title {
-  padding: 50px 35px 0 118px;
+  padding: 40px 15px 0 100px
 }
 
 #articles .articles-block .content.eight .description {
-  padding: 100px 0px 0 110px;
+  padding: 75px 0px 0 95px
 }
 
 #articles .articles-block .content.nine .title {
-  padding: 50px 35px 0 118px;
+  padding: 40px 10px 0 100px
 }
 
 #articles .articles-block .content.nine .description {
-  padding: 100px 0px 0 110px;
+  padding: 80px 0px 0 110px
 }
 
 #articles .articles-block .content.ten .title {
-  padding: 50px 10px 0 130px
+  padding: 40px 0px 0 120px;
 }
 
 #articles .articles-block .content.ten .description {
-  padding: 75px 0px 0 110px;
+  padding: 60px 0px 0 110px
 }
 
 #articles .articles-block .content.eleven .title {
-  padding: 50px 13px 0 110px;
+  padding: 40px 0 0 85px
 }
 
 #articles .articles-block .content.eleven .description {
-  padding: 70px 0px 0 110px;
+  padding: 45px 0px 0 90px
 }
 
 #articles .articles-block:hover .content .title {
@@ -580,7 +580,7 @@ nav a.active {
 }
 
 #services .service-block .img {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -591,7 +591,7 @@ nav a.active {
   background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%);
   overflow: hidden;
   padding: 20px;
-  border: 3px solid #fff;
+  border: 3px none #fff;
 }
 
 #services .service-block .img svg path,
@@ -603,7 +603,7 @@ nav a.active {
   color: #333;
   text-align: center;
   font-family: Tajawal;
-  font-size: 24px;
+  font-size: 21px;
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
@@ -721,7 +721,7 @@ nav a.active {
   height: 280px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  background-color: #fcfbfb;
+  background-color: #fff;
 }
 
 #testimonial .info .name {
@@ -889,7 +889,7 @@ nav a.active {
   color: #FFF;
   text-align: right;
   font-family: Tajawal;
-  font-size: 32px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -1100,6 +1100,7 @@ nav a.active {
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
+  margin-bottom: 29px;
 }
 
 #last-blog .last-blog-block div {
@@ -1118,7 +1119,7 @@ nav a.active {
   align-items: center;
   gap: 8px;
   border-radius: 5px;
-  border: 0.2px solid #333;
+  border: 0.2px solid #979797;
   background: #FFF;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1313,6 +1314,11 @@ footer .last-block a {
   margin-bottom: 20px;
 }
 
+footer ul li .speciel {
+  line-height: 1.3;
+  font-size: 10px !important;
+}
+
 /************************************ END FOOTER  ************************************/
 
 /************************************ START Who We Are  ************************************/
@@ -1337,7 +1343,7 @@ footer .last-block a {
 }
 
 .caontact-us-bg {
-  background: url(../imgs/contact-us.webp) no-repeat center center/cover !important;
+  background: url(../imgs/contact-us.webp) no-repeat left center/cover !important;
 }
 
 .who-we-are-bg .headerContent,
@@ -1811,7 +1817,7 @@ footer .last-block a {
 #our-gallery .main-block .block {
   border-radius: 0px 0px 10px 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  width: 573px;
+  width: 530px;
 }
 
 #our-gallery .main-block .block a {
@@ -1907,7 +1913,7 @@ footer .last-block a {
 
 #our-gallery .main-block .block .bottom {
   display: flex;
-  padding: 24px;
+  padding: 24px 24px 24px 16px;
   flex-direction: column;
   align-items: flex-start;
   gap: 8px;
@@ -1938,6 +1944,7 @@ footer .last-block a {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+  margin-bottom: 0;
 }
 
 .info-gallery-2 h2 {
@@ -2118,7 +2125,7 @@ footer .last-block a {
 
 #contact-us form .red-star-4 {
   top: 5px;
-  right: 65px;
+  right: 68px;
 }
 
 #contact-us form input[type="submit"] {
@@ -2147,13 +2154,17 @@ footer .last-block a {
 
 #contact-us form textarea {
   height: 144px;
+  font-family: Tajawal;
   resize: none;
 }
 
-#contact-us a img {
+#contact-us a img,
+#contact-us a svg {
   margin-left: 15px;
   width: 40px;
   height: 28px;
+  fill: #1B4071;
+  font-size: 40px;
 }
 
 #contact-us a .main-title {
@@ -2170,6 +2181,16 @@ footer .last-block a {
   color: #333;
   font-family: Cabin;
   font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.26px;
+}
+
+#contact-us a .new-child-title {
+  color: #333;
+  font-family: Tajawal;
+  font-size: 11px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -2264,7 +2285,7 @@ footer .last-block a {
   display: flex;
   align-items: center;
   height: 140px;
-  padding: 10px 8px 10px 48px;
+  padding: 10px 8px 10px 38px;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -2297,7 +2318,7 @@ footer .last-block a {
   color: #FFF;
   text-align: right;
   font-family: Tajawal;
-  font-size: 24px;
+  font-size: 23px;
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
@@ -2403,7 +2424,7 @@ footer .last-block a {
   color: #333;
   text-align: center;
   font-family: Tajawal;
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 200%;
@@ -2452,7 +2473,7 @@ footer .last-block a {
   color: #333;
   text-align: center;
   font-family: Tajawal;
-  font-size: 36px;
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
   line-height: 200%;
@@ -2703,7 +2724,7 @@ footer .last-block a {
   color: #1B4071;
   text-align: center;
   font-family: Tajawal;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 200%;
@@ -2884,7 +2905,7 @@ footer .last-block a {
   color: #1B4071;
   text-align: right;
   font-family: Tajawal;
-  font-size: 28px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
@@ -2894,7 +2915,7 @@ footer .last-block a {
   color: #333;
   text-align: right;
   font-family: Tajawal;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -3282,10 +3303,11 @@ footer .last-block a {
   color: #1B4071;
   text-align: center;
   font-family: Tajawal;
-  font-size: 58px;
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  margin-bottom: 58px;
 }
 
 .manage-social-media {
@@ -3878,12 +3900,12 @@ footer .last-block a {
   }
 
   #our-design .our-design-block h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
   }
 
   #our-design .our-design-block p {
-    font-size: 20px;
+    font-size: 16px;
   }
 
   #our-design .our-design-block {
@@ -4538,7 +4560,7 @@ form .submit:hover {
   color: #333 !important;
   text-align: center !important;
   font-family: Tajawal !important;
-  font-size: 32px !important;
+  font-size: 30px !important;
   font-style: normal !important;
   font-weight: 500 !important;
   line-height: 150% !important;
@@ -4648,6 +4670,25 @@ form .submit:hover {
 
 .wahed-class img {
   width: 550px !important;
+}
+
+.new-p {
+  width: 732px !important;
+  color: #333 !important;
+  text-align: right !important;
+  font-family: Tajawal !important;
+  font-size: 26px !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  line-height: 150% !important;
+}
+
+.new-img {
+  width: 550px !important;
+}
+
+.new-2 {
+  font-size: 30px !important;
 }
 
 @media (max-width: 991px) {
