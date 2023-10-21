@@ -500,7 +500,7 @@ nav a.active {
 }
 
 #articles .articles-block .content.ten .description {
-  padding: 60px 0px 0 110px
+  padding: 60px 0px 0 115px;
 }
 
 #articles .articles-block .content.eleven .title {
@@ -2083,7 +2083,7 @@ footer ul li .speciel {
   color: #333;
   text-align: right;
   font-family: Tajawal;
-  font-size: 18px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
@@ -2141,6 +2141,7 @@ footer ul li .speciel {
   text-align: center;
   position: relative;
   z-index: 9;
+  border: 0 !important;
 }
 
 #contact-us form input[type="submit"]:hover {
@@ -2350,7 +2351,7 @@ footer ul li .speciel {
 #our-importent p {
   color: #333;
   font-family: Tajawal;
-  font-size: 32px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -2448,7 +2449,7 @@ footer ul li .speciel {
 
 .legal-advice-bg {
   background: url(../imgs/service-2.webp) no-repeat center center/cover !important;
-  height: 560px !important;
+  height: 550px !important;
   position: relative;
 }
 
@@ -2656,7 +2657,7 @@ footer ul li .speciel {
 }
 
 .marketing-consulting-3 {
-  background: linear-gradient(87deg, #304259 -13.5%, #78A5DF 93.99%) !important;
+  background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%) !important;
 }
 
 .marketing-consulting-3 p {
@@ -3635,6 +3636,11 @@ footer ul li .speciel {
 
   #planning p {
     font-size: 28px;
+    text-align: center;
+  }
+
+  #planning a {
+    margin: 0 auto;
   }
 
   .slide .desc {
@@ -4125,6 +4131,44 @@ footer ul li .speciel {
   line-height: 24px;
   letter-spacing: 0.2px;
   margin-bottom: 28px;
+}
+
+.testimonial .nav-btn {
+  background-color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.testimonial .nav-btn svg {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  fill: #333;
+  stroke: #333;
+}
+
+.testimonial .nav-btn svg path {
+  stroke-width: 3px;
+  fill: #333;
+  stroke: #333;
+}
+
+.testimonial .nav-btn.rotate {
+  rotate: 180deg;
+}
+
+
+img.rotate {
+  rotate: 180deg;
 }
 
 /* swiper button css */
