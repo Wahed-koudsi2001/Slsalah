@@ -133,6 +133,21 @@ nav ul li a:hover svg path {
   margin-top: 5px;
 }
 
+.navbar-expand-lg .navbar-nav .dropdown-menu.show li a.new-active {
+  background-color: #78a5df96;
+  color: #fff;
+  border-radius: 0 0 5px 5px;
+  -webkit-border-radius: 0 0 5px 5px;
+  -moz-border-radius: 0 0 5px 5px;
+  -ms-border-radius: 0 0 5px 5px;
+  -o-border-radius: 0 0 5px 5px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu.show li a.new-active:hover {
+  color: #fff !important;
+}
+
+
 .navbar-expand-lg .navbar-nav .dropdown-menu.show li {
   display: flex;
   gap: 40px 0;
@@ -3372,6 +3387,7 @@ footer ul li .speciel {
   }
 
   .navbar-expand-lg .navbar-nav .dropdown-menu.show li {
+    width: 100%;
     gap: 5px 0;
   }
 
