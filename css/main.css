@@ -549,33 +549,29 @@ nav a.active {
   padding: 80px 0;
 }
 
-@media (min-width: 1360px) {
-  #services .new-container {
-    width: 1320px;
-    margin: auto;
-  }
-}
-
 #services .main-services-block {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 48px 28px;
+  gap: 48px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1199px) {
   #services .main-services-block {
     justify-content: center;
   }
 }
 
+
+
 #services .main-services-block .child-services-block {
-  width: 410px;
+  width: 340px;
   height: 420px;
 }
 
-#services .main-services-block .child-services-block.last-child {
-  margin-left: auto;
+@media (max-width: 768px) {
+  #services .main-services-block .child-services-block {
+    width: 100%
+  }
 }
 
 #services .header-content {
@@ -632,8 +628,8 @@ nav a.active {
 
 #services .service-block .img {
   margin-bottom: 15px;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -654,7 +650,7 @@ nav a.active {
   color: #333;
   text-align: center;
   font-family: Tajawal;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 800;
   line-height: 150%;
@@ -4077,10 +4073,8 @@ footer ul li .speciel {
     font-size: 26px;
   }
 
-  /* #carousel h3,
-  #other-testimonial h3,
-  #last-blog h3 {
-    font-size: 34px;
+  /* .testimonial .nav-btn {
+    width: ;
   } */
 }
 
