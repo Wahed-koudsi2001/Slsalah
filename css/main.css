@@ -181,7 +181,7 @@ nav ul li a:hover svg path {
 
 .header h1 {
   font-family: Tajawal;
-  font-size: 55px;
+  font-size: 48px;
   font-weight: 700;
   line-height: 96px;
   letter-spacing: 0em;
@@ -733,7 +733,7 @@ nav a.active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 280px;
+  height: 300px;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   background-color: #fff;
@@ -1395,7 +1395,7 @@ footer ul li .speciel {
   color: #333;
   text-align: justify;
   font-family: Tajawal;
-  font-size: 32px;
+  font-size: 31px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -1485,14 +1485,15 @@ footer ul li .speciel {
   font-style: normal;
   font-weight: 700;
   line-height: 150%;
+  width: fit-content;
   position: relative;
 }
 
 .under-line-title::before {
   content: "";
   position: absolute;
-  bottom: -10px;
-  right: 13px;
+  bottom: -2px;
+  right: 15px;
   width: 112px;
   height: 6px;
   border-radius: 50px;
@@ -1503,11 +1504,15 @@ footer ul li .speciel {
   -o-border-radius: 50px;
 }
 
+.under-line-title.new-title::before {
+  right: 13px;
+}
+
 .vision-desc {
   color: #1B4071;
   text-align: justify;
   font-family: Tajawal;
-  font-size: 28px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
@@ -3366,7 +3371,7 @@ footer ul li .speciel {
   }
 
   .header h1 {
-    font-size: 46px;
+    font-size: 38px;
   }
 
   .dropdown svg path {
@@ -3647,7 +3652,7 @@ footer ul li .speciel {
   }
 
   #testimonial h3 {
-    font-size: 34px;
+    font-size: 38px;
   }
 
   #planning h3 {
@@ -4026,11 +4031,11 @@ footer ul li .speciel {
     font-size: 26px;
   }
 
-  #carousel h3,
+  /* #carousel h3,
   #other-testimonial h3,
   #last-blog h3 {
     font-size: 34px;
-  }
+  } */
 }
 
 /* ------------------------ swiper ------------------------ */
