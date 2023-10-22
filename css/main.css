@@ -162,6 +162,7 @@ nav ul li a:hover svg path {
   font-style: normal;
   font-weight: 500;
   line-height: 150%;
+  padding-left: 0 !important;
 }
 
 .dropdown-menu[data-bs-popper] {
@@ -3256,6 +3257,7 @@ footer ul li .speciel {
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
   -o-transform: scale(1.5);
+  background-color: #fff;
 }
 
 .card-slider span {
@@ -3631,6 +3633,10 @@ footer ul li .speciel {
     flex-direction: column;
     align-items: center;
   }
+
+  #our-gallery .main-block-gallery .gallery-block:hover {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 575px) {
@@ -3649,6 +3655,10 @@ footer ul li .speciel {
 
   .headerContent h1 {
     font-size: 36px;
+  }
+
+  #video .video-container .video-icon {
+    width: 80px;
   }
 
   #testimonial h3 {
@@ -3697,7 +3707,7 @@ footer ul li .speciel {
   }
 
   #more-about-us p {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   #more-about-us .more-about-us-block .imgs .two {
@@ -3747,7 +3757,7 @@ footer ul li .speciel {
   }
 
   #cta-2 p {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 
   #another-cta .another-cta-text {
@@ -3998,7 +4008,7 @@ footer ul li .speciel {
 
   #info-gallery .second-row p,
   #info-gallery .second-row ul {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .search-2 p {
