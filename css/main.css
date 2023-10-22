@@ -558,7 +558,7 @@ nav a.active {
 
 #services .main-services-block {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   gap: 48px 28px;
 }
@@ -570,8 +570,12 @@ nav a.active {
 }
 
 #services .main-services-block .child-services-block {
-  width: 400px;
+  width: 410px;
   height: 420px;
+}
+
+#services .main-services-block .child-services-block.last-child {
+  margin-left: auto;
 }
 
 #services .header-content {
