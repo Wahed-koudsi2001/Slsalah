@@ -558,8 +558,9 @@ nav a.active {
 
 #services .main-services-block {
   display: flex;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  gap: 48px;
+  gap: 48px 28px;
 }
 
 @media (max-width: 1300px) {
