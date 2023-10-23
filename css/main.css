@@ -70,6 +70,8 @@ button {
   border: 1px solid #fff;
 }
 
+
+
 /************************************ START HEADER  ************************************/
 #header .container {
   position: relative;
@@ -637,12 +639,17 @@ nav a.active {
   -o-border-radius: 50%;
   background: linear-gradient(89deg, #1B4071 11.59%, #78A5DF 139.53%);
   overflow: hidden;
-  padding: 20px;
   border: 3px none #fff;
 }
 
+#services .service-block .img svg {
+  font-size: 30px;
+}
+
 #services .service-block .img svg path,
-#services .service-block .img svg polygon {
+#services .service-block .img svg polygon,
+#services .service-block .img svg rect,
+#services .service-block .img svg circle {
   fill: #fff;
 }
 
@@ -4798,4 +4805,12 @@ form .submit:hover {
   .wahed-class img {
     width: 100% !important;
   }
+}
+
+.info-gallery .fixedNavbar .social-media-icons svg.light {
+  fill: #000 !important;
+}
+
+.info-gallery .fixedNavbar .social-media-icons svg.light {
+  fill: #000 !important;
 }
