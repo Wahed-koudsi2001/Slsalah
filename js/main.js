@@ -2,7 +2,7 @@ AOS.init();
 
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
-    loop: true,
+    slidesPerView: 1,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
