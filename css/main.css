@@ -570,7 +570,7 @@ nav a.active {
 
 @media (max-width: 768px) {
   #services .main-services-block .child-services-block {
-    width: 100%
+    width: 100%;
   }
 }
 
@@ -1213,8 +1213,6 @@ nav a.active {
 }
 
 #last-blog .top {
-  background: url(../imgs/blog-top-bg.webp) no-repeat center center/cover;
-  width: 100%;
   height: 222px;
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -1223,7 +1221,7 @@ nav a.active {
   -o-border-radius: 8px;
 }
 
-#last-blog .top div {
+#last-blog .btns {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -1231,7 +1229,7 @@ nav a.active {
   gap: 10px;
 }
 
-#last-blog .top div button {
+#last-blog .btns button {
   display: flex;
   width: 117.968px;
   height: 38.852px;
@@ -1835,6 +1833,7 @@ footer ul li .speciel {
   border-radius: 5px;
   border: 0.2px solid #ccc;
   background: rgba(27, 64, 112, 0.05);
+  font-family: Tajawal;
 }
 
 #our-gallery .search button {
@@ -1867,13 +1866,25 @@ footer ul li .speciel {
 }
 
 #our-gallery .main-block .block {
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   width: 530px;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -ms-border-radius: 10px 10px 10px 10px;
+  -o-border-radius: 10px 10px 10px 10px;
+  overflow: hidden;
+}
+
+#our-gallery .main-block .block img {
+  height: 222px;
+  object-fit: cover;
 }
 
 #our-gallery .main-block .block a {
   text-decoration: none;
+  position: relative;
 }
 
 #our-gallery .main-block .block span {
@@ -1888,53 +1899,18 @@ footer ul li .speciel {
 }
 
 #our-gallery .main-block .block .top {
+  position: absolute;
+  top: 65px;
   height: 222px;
   border-radius: 10px 10px 0px 0px;
   -webkit-border-radius: 10px 10px 0px 0px;
   -moz-border-radius: 10px 10px 0px 0px;
   -ms-border-radius: 10px 10px 0px 0px;
   -o-border-radius: 10px 10px 0px 0px;
-  padding: 20px;
-}
-
-#our-gallery .main-block .block .top.one {
-  background: url(../imgs/blog-1.webp) no-repeat top center/cover;
-}
-
-#our-gallery .main-block .block .top.two {
-  background: url(../imgs/blog-2.webp) no-repeat top center/cover;
-}
-
-#our-gallery .main-block .block .top.three {
-  background: url(../imgs/blog-3.webp) no-repeat top center/cover;
-}
-
-#our-gallery .main-block .block .top.four {
-  background: url(../imgs/blog-4.webp) no-repeat top center/cover;
-}
-
-#our-gallery .main-block .block .top.five {
-  background: url(../imgs/blog-5.webp) no-repeat top center/cover;
-}
-
-#our-gallery .main-block .block .top.six {
-  background: url(../imgs/blog-6.webp) no-repeat top center/cover;
-}
-
-#our-gallery .main-block .block .top.seven {
-  background: url(../imgs/blog-6.webp) no-repeat top center/cover;
-}
-
-#our-gallery .main-block .block .top.eight {
-  background: url(../imgs/blog-8.webp) no-repeat top center/cover;
-}
-
-#our-gallery .main-block .block .top.nine {
-  background: url(../imgs/blog-9.webp) no-repeat top center/cover;
-}
-
-#our-gallery .main-block .block .top.ten {
-  background: url(../imgs/blog-10.webp) no-repeat top center/cover;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  height: fit-content;
 }
 
 #our-gallery .main-block .block .top button {
@@ -4073,9 +4049,10 @@ footer ul li .speciel {
     font-size: 26px;
   }
 
-  /* .testimonial .nav-btn {
-    width: ;
-  } */
+  #our-gallery .main-block .block .top {
+    padding-right: 10px;
+    top: 70px;
+  }
 }
 
 /* ------------------------ swiper ------------------------ */
