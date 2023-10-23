@@ -1225,6 +1225,8 @@ nav a.active {
   -moz-border-radius: 8px;
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
+  width: 100%;
+  object-fit: cover;
 }
 
 #last-blog .btns {
