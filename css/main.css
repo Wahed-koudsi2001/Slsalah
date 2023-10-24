@@ -4977,3 +4977,7 @@ form .submit:hover {
     font-size: 26px;
   }
 }
+
+.caontact-us-bg .light-wahed svg {
+  fill: #fff !important;
+}
