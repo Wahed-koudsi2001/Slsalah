@@ -1486,6 +1486,10 @@ footer ul li .speciel {
 
 #more-about-us .imgs img.show {
   transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
 }
 
 .more-about-us {
@@ -4744,7 +4748,17 @@ form .submit:hover {
   fill: #000 !important;
 }
 
+@media (max-width: 575px) {
+  .testimonial .nav-btn {
+    width: 40px;
+    height: 40px;
+  }
 
+  .testimonial .nav-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+}
 
 /* FOR HEADER SLIDER */
 .slide-wrapper {

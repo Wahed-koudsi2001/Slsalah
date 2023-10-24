@@ -1,5 +1,6 @@
 AOS.init();
 
+let sliderInterval;
 const sliders = document.querySelectorAll('.slide-wrapper input[type="radio"]');
 let currentSlide = 0;
 let direction = 1;
@@ -13,7 +14,7 @@ function changeSlide(slideIndex) {
 function startSlideRotation() {
     changeSlide(0);
 
-    setInterval(() => {
+    sliderInterval = setInterval(() => {
         if (currentSlide === sliders.length - 1) {
             direction = -1;
         } else if (currentSlide === 0 && direction === -1) {
@@ -24,7 +25,6 @@ function startSlideRotation() {
         changeSlide(nextSlide);
     }, 5000);
 }
-
 startSlideRotation();
 
 var swiper = new Swiper(".mySwiper-2", {
@@ -227,48 +227,3 @@ window.addEventListener("scroll", () => {
         });
     }
 });
-
-function animateImages() {
-    var images = document.querySelectorAll('#more-about-us .imgs img');
-    images.forEach(function (image, index) {
-        image.style.transform = 'translateX(200%)';
-        setTimeout(function () {
-            image.style.transform = 'translateX(0)';
-        }, (index + 1) * 1500);
-    });
-}
-
-function handleScroll() {
-    var section = document.getElementById('more-about-us');
-    var sectionTop = section.offsetTop;
-    var windowHeight = window.innerHeight;
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-    if (scrollTop > sectionTop - windowHeight + windowHeight / 2) {
-        animateImages();
-        window.removeEventListener('scroll', handleScroll);
-        window.addEventListener('scroll', handleScrollReverse);
-    }
-}
-
-function handleScrollReverse() {
-    var section = document.getElementById('more-about-us');
-    var sectionTop = section.offsetTop;
-    var windowHeight = window.innerHeight;
-    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrollTop < sectionTop - windowHeight + windowHeight / 2) {
-        resetImages();
-        window.removeEventListener('scroll', handleScrollReverse);
-        window.addEventListener('scroll', handleScroll);
-    }
-}
-
-function resetImages() {
-    var images = document.querySelectorAll('#more-about-us .imgs img');
-
-    images.forEach(function (image) {
-        image.style.transform = 'translateX(200%)';
-    });
-}
-
-window.addEventListener('scroll', handleScroll);
